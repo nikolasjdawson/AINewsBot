@@ -1,0 +1,42 @@
+<%= form_with(model: feed_source, local: true) do |form| %>
+  <% if feed_source.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(feed_source.errors.count, "error") %> prohibited this feed_source from being saved:</h2>
+
+      <ul>
+      <% feed_source.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= form.label :link %>
+    <%= form.text_field :link %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feed_type %>
+    <%= form.text_field :feed_type %>
+  </div>
+
+  <div class="field">
+    <%= form.label :num_articles %>
+    <%= form.number_field :num_articles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :description %>
+    <%= form.text_field :description %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

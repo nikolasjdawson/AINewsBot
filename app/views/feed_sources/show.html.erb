@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @feed_source.title %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @feed_source.link %>
+</p>
+
+<p>
+  <strong>Feed type:</strong>
+  <%= @feed_source.feed_type %>
+</p>
+
+<p>
+  <strong>Num articles:</strong>
+  <%= @feed_source.num_articles %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @feed_source.description %>
+</p>
+
+<%= link_to 'Edit', edit_feed_source_path(@feed_source) %> |
+<%= link_to 'Back', feed_sources_path %> |
+<%= link_to 'Fetch News Items', fetch_feed_source_path(@feed_source) %> |
