@@ -4,7 +4,7 @@ class FeedSourcesController < ApplicationController
   def fetch
     require "open-uri"
     doc = Nokogiri::XML(open(@feed_source.link))
-    items = doc.css("entry link")
+    items = doc.css("item link").first(@feed_source.num_articles)
     items.each do |d|
       Item.create(link: d.text, feed_source_id: @feed_source.id)
     end

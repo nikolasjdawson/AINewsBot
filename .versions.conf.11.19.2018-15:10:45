@@ -1,0 +1,4 @@
+ruby=ruby-2.5.0
+#ruby-gemset=my-projectit
+#ruby-gem-install=bundler rake
+#ruby-bundle-install=true
