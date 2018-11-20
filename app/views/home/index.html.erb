@@ -1,2 +1,23 @@
 <h1>AI NewsBot</h1>
-<%= link_to "ADD NEWS SOURCE", new_feed_source_path %>
+<div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h4>Catgeory</h4>
+        <table class="table">
+          <tbody>
+            <% @items.each do |item| %>
+              <tr>
+                <td>
+                  <p class = 'mb-0 pb-0'><%= link_to item.title, item.link, target: '_blank' %>
+                  <small class='text-muted'>(<%= link_to item.host, item.host, class: 'text-muted' %>)</small></p>
+                  <small><%= item.description %></small>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

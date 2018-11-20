@@ -1,0 +1,47 @@
+<style media="screen">
+  .navbar {
+    padding: 0 1rem;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    min-height: 55px;
+  }
+  .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+    color: #ed1e24;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(0, 0, 0);
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ed1e24;
+}
+</style>
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FAFAFA;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">
+      <img src="<%= asset_path 'logo.png' %>" height="40px" alt="">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="http://bitsandatoms.co">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://bitsandatoms.co/blog">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://ainewsbot.bitsandatoms.co/">AI Newsbot</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://bitsandatoms.co/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://bitsandatoms.co/contact">Contact</a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</nav>

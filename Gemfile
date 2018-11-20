@@ -7,6 +7,8 @@ ruby '2.5.0'
 gem 'rails', '~> 5.2.1'
 gem 'metainspector'
 gem 'sucker_punch', '~> 2.0'
+gem 'bootstrap'
+gem 'jquery-rails'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

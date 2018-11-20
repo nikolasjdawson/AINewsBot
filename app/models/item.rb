@@ -5,6 +5,6 @@ class Item < ApplicationRecord
 
   def fetch_info
     item_info = MetaInspector.new(self.link)
-    self.update(title: item_info.title, description: item_info.description)
+    self.update(description: item_info.description)
   end
 end

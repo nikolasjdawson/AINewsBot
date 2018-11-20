@@ -17,9 +17,9 @@
   <tbody>
     <% @items.each do |item| %>
       <tr>
-        <td><%= link_to item.title, item %></td>
-        <td><%= item.pub_date %></td>
-        <td><%= item.description %></td>
+        <td><%= link_to item.title, item.link, target: "_blank" %></td>
+        <td><%= item.pub_date.strftime('%d %b %y') %></td>
+        <td><%= item.description.html_safe %></td>
         <td><%= item.category %></td>
         <td><%= item.feed_source.title %></td>
         <td><%= link_to 'Show', item %></td>
