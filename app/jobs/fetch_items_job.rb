@@ -14,13 +14,13 @@ class FetchItemsJob
             title = doc.css("item title")[i].text
             # description = doc.css("item description")[i].text
             category = doc.css("item category")[i]
-            unless category.empty?
+            unless category.nil?
               category = category.text
             else
               category = ""
             end
             pub_date = doc.css("item pubDate")[i]
-            unless pub_date.empty?
+            unless pub_date.nil?
               pub_date = pub_date.text
             else
               pub_date = DateTime.now
