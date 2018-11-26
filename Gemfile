@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.0'
@@ -9,6 +9,8 @@ gem 'metainspector'
 gem 'sucker_punch', '~> 2.0'
 gem 'bootstrap'
 gem 'jquery-rails'
+gem 'devise'
+gem 'simple_form'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use Puma as the app server

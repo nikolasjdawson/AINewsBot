@@ -78,6 +78,6 @@ class FeedSourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def feed_source_params
-      params.require(:feed_source).permit(:title, :link, :feed_type, :num_articles, :description)
+      params.require(:feed_source).permit(:title, :link, :feed_type, :num_articles, :description, :category_id)
     end
 end

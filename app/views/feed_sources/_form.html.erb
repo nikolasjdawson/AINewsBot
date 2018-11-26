@@ -1,4 +1,4 @@
-<%= form_with(model: feed_source, local: true) do |form| %>
+<%= simple_form_for(@feed_source, local: true) do |form| %>
   <% if feed_source.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(feed_source.errors.count, "error") %> prohibited this feed_source from being saved:</h2>
@@ -11,30 +11,11 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :link %>
-    <%= form.text_field :link %>
-  </div>
-
-  <div class="field">
-    <%= form.label :feed_type %>
-    <%= form.text_field :feed_type %>
-  </div>
-
-  <div class="field">
-    <%= form.label :num_articles %>
-    <%= form.number_field :num_articles %>
-  </div>
-
-  <div class="field">
-    <%= form.label :description %>
-    <%= form.text_field :description %>
-  </div>
+<%= form.association :category %>
+<%= form.input :title %>
+<%= form.input :num_articles %>
+<%= form.input :feed_type %>
+<%= form.input :description %>
 
   <div class="actions">
     <%= form.submit %>

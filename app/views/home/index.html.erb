@@ -1,17 +1,18 @@
 <h1>AI NewsBot</h1>
 <div class="row">
   <div class="col-md-6">
+  <% @categories.each do |cat| %>
     <div class="card">
       <div class="card-body">
-        <h4>Catgeory</h4>
+        <h4><%= cat.title %></h4>
         <table class="table">
           <tbody>
-            <% @items.each do |item| %>
+            <% cat.latest_items.each do |item| %>
               <tr>
                 <td>
                   <p class = 'mb-0 pb-0'><%= link_to item.title, item.link, target: '_blank' %>
                   <small class='text-muted'>(<%= link_to item.host, item.host, class: 'text-muted' %>)</small></p>
-                  <small><%= item.description %></small>
+                  <small><%= truncate(item.description, length: 100) %></small>
                 </td>
               </tr>
             <% end %>
@@ -19,5 +20,6 @@
         </table>
       </div>
     </div>
+  <% end %>
   </div>
 </div>
