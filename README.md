@@ -1,24 +1,23 @@
-# README
+rails g scaffold Category title position:integer
+rails g migration AddCategoryToFeedSource category:belongs_to
+Create seeds file
+Add form field and strong parameters in controller
+For each category, find the items from the last 24 hours
+Category.includes(:items).where(items: { created_at: 1.day.ago..DateTime.now })
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+Truncate descriptions
 
-* System dependencies
+Devise
+Simple_form
 
-* Configuration
+Reddit & Research cause errors
 
-* Database creation
+Push to Heroku
+Rake tasks
 
-* Database initialization
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+cats = {
+  [title: "News", position: 1]
+}
