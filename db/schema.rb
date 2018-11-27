@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_26_051421) do
+ActiveRecord::Schema.define(version: 2018_11_27_060320) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
@@ -42,6 +42,15 @@ ActiveRecord::Schema.define(version: 2018_11_26_051421) do
     t.datetime "updated_at", null: false
     t.string "host"
     t.index ["feed_source_id"], name: "index_items_on_feed_source_id"
+  end
+
+  create_table "subscribers", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.boolean "is_confirmed", default: false
   end
 
   create_table "users", force: :cascade do |t|

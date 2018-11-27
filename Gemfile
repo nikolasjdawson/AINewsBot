@@ -11,6 +11,7 @@ gem 'bootstrap'
 gem 'jquery-rails'
 gem 'devise'
 gem 'simple_form'
+gem 'mailgun-ruby', '~>1.1.6'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production

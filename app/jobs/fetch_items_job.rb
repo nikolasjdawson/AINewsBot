@@ -7,19 +7,24 @@ class FetchItemsJob
       feed_sources = FeedSource.all
       feed_sources.each do |fs|
         doc = Nokogiri::XML(open(fs.link))
+        if doc.css("item")
+          item = "item"
+        elsif doc.css("entry")
+          item = "entry"
+        end
         i = 0
         while i < fs.num_articles
-          link = doc.css("item link")[i].text
+          link = doc.css(item + " link")[i].text
           unless Item.where(link: link).any?
-            title = doc.css("item title")[i].text
-            # description = doc.css("item description")[i].text
-            category = doc.css("item category")[i]
+            title = doc.css(item + " title")[i].text
+            # description = doc.css(item + " description")[i].text
+            category = doc.css(item + " category")[i]
             unless category.nil?
               category = category.text
             else
               category = ""
             end
-            pub_date = doc.css("item pubDate")[i]
+            pub_date = doc.css(item + " pubDate")[i]
             unless pub_date.nil?
               pub_date = pub_date.text
             else

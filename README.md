@@ -21,3 +21,11 @@ Rake tasks
 cats = {
   [title: "News", position: 1]
 }
+
+git pull
+git push heroku master
+heroku run rake update_feed
+
+And then refresh browser (ainewsbot.herokuapp.com)
+
+NLP summary

@@ -1,0 +1,6 @@
+<h1>Welcome to AI NewsBot!</h1>
+
+<p>
+  Hi <%= @subscriber.first_name %>, Thanks for subscribing to the AI NewsBot. Please click the link to confirm your subscription.
+</p>
+<p><%= link_to "Confirm Subscription", confirm_subscriber_url(@subscriber.id) %></p>

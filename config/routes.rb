@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  resources :subscribers do
+    member do
+      get :confirm
+    end
+  end
   devise_for :users
   resources :categories
   root 'home#index'
