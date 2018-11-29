@@ -40,6 +40,11 @@
         <li class="nav-item">
           <a class="nav-link" href="http://bitsandatoms.co/contact">Contact</a>
         </li>
+        <% if user_signed_in? %>
+        <li class="nav-item">
+          <a class="nav-link" href="<%= feed_sources_path %>">Feed Sources</a>
+        </li>
+        <% end %>
 
       </ul>
     </div>
