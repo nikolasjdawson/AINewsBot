@@ -6,6 +6,6 @@ task :update_feed => :environment do
   puts "done."
 end
 
-# task :send_reminders => :environment do
-#   User.send_reminders
-# end
+task :send_news => :environment do
+  SendNewsJob.new.perform
+end

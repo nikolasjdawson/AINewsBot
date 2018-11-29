@@ -1,0 +1,8 @@
+<h1>Latest news from AI NewsBot</h1>
+<p>Hi <%= @subscriber.first_name %> </p>
+<% @categories.each do |cat| %>
+  <h3><%= cat.title %></h3>
+  <% cat.latest_items.each do |item| %>
+    <p><%= item.title %> [<%= link_to 'Link', item.link %>] <em><%= item.host %></em></p>
+  <% end %>
+<% end %>
