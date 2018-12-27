@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <category term="MachineLearning" label="r/MachineLearning"/>
+  <updated>2018-12-27T05:18:17+00:00</updated>
+  <icon>https://www.redditstatic.com/icon.png/</icon>
+  <id>/r/MachineLearning.rss</id>
+  <link rel="self" href="https://www.reddit.com/r/MachineLearning.rss" type="application/atom+xml" />
+  <link rel="alternate" href="https://www.reddit.com/r/MachineLearning" type="text/html" />
+  <logo>https://b.thumbs.redditmedia.com/18a2I44a4l7fNrTWHDoJuWVy79_ptU7Y-a2sqWt4YKQ.png</logo>
+  <title>Machine Learning</title>
+  <entry>
+    <author>
+      <name>/u/omniscientclown</name>
+      <uri>https://www.reddit.com/user/omniscientclown</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Enjoyed this thread last year, so I am making a one for this year. &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/omniscientclown&quot;&gt; /u/omniscientclown &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a6cbzm/d_what_is_the_best_ml_paper_you_read_in_2018_and/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a6cbzm/d_what_is_the_best_ml_paper_you_read_in_2018_and/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a6cbzm</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a6cbzm/d_what_is_the_best_ml_paper_you_read_in_2018_and/" />
+    <updated>2018-12-15T04:34:58+00:00</updated>
+    <title>[D] What is the best ML paper you read in 2018 and why?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/ML_WAYR_bot</name>
+      <uri>https://www.reddit.com/user/ML_WAYR_bot</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;This is a place to share machine learning research papers, journals, and articles that you&amp;#39;re reading this week. If it relates to what you&amp;#39;re researching, by all means elaborate and give us your insight, otherwise it could just be an interesting paper you&amp;#39;ve read.&lt;/p&gt; &lt;p&gt;Please try to provide some insight from your understanding and please don&amp;#39;t post things which are present in wiki.&lt;/p&gt; &lt;p&gt;Preferably you should link the arxiv page (not the PDF, you can easily access the PDF from the summary page but not the other way around) or any other pertinent links.&lt;/p&gt; &lt;p&gt;Previous weeks :&lt;/p&gt; &lt;table&gt;&lt;thead&gt; &lt;tr&gt; &lt;th&gt;1-10&lt;/th&gt; &lt;th&gt;11-20&lt;/th&gt; &lt;th&gt;21-30&lt;/th&gt; &lt;th&gt;31-40&lt;/th&gt; &lt;th&gt;41-50&lt;/th&gt; &lt;th&gt;51-60&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;&lt;tbody&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4qyjiq&quot;&gt;Week 1&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/57xw56&quot;&gt;Week 11&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/60ildf&quot;&gt;Week 21&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6s0k1u&quot;&gt;Week 31&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7tn2ax&quot;&gt;Week 41&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/9s9el5&quot;&gt;Week 51&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4s2xqm&quot;&gt;Week 2&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5acb1t&quot;&gt;Week 12&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/64jwde&quot;&gt;Week 22&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/72ab5y&quot;&gt;Week 32&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7wvjfk&quot;&gt;Week 42&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/a4opot&quot;&gt;Week 52&lt;/a&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4t7mqm&quot;&gt;Week 3&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5cwfb6&quot;&gt;Week 13&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/674331&quot;&gt;Week 23&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/75405d&quot;&gt;Week 33&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/807ex4&quot;&gt;Week 43&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4ub2kw&quot;&gt;Week 4&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5fc5mh&quot;&gt;Week 14&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/68hhhb&quot;&gt;Week 24&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/782js9&quot;&gt;Week 34&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/8aluhs&quot;&gt;Week 44&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4xomf7&quot;&gt;Week 5&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5hy4ur&quot;&gt;Week 15&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/69teiz&quot;&gt;Week 25&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7b0av0&quot;&gt;Week 35&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/8tnnez&quot;&gt;Week 45&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/4zcyvk&quot;&gt;Week 6&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5kd6vd&quot;&gt;Week 16&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6d7nb1&quot;&gt;Week 26&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7e3fx6&quot;&gt;Week 36&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/8x48oj&quot;&gt;Week 46&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/52t6mo&quot;&gt;Week 7&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5ob7dx&quot;&gt;Week 17&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6gngwc&quot;&gt;Week 27&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7hcc2c&quot;&gt;Week 37&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/910jmh&quot;&gt;Week 47&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/53heol&quot;&gt;Week 8&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5r14yd&quot;&gt;Week 18&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6jgdva&quot;&gt;Week 28&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7kgcqr&quot;&gt;Week 38&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/94up0g&quot;&gt;Week 48&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/54kvsu&quot;&gt;Week 9&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5tt9cz&quot;&gt;Week 19&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6m9l1v&quot;&gt;Week 29&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7nayri&quot;&gt;Week 39&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/98n2rt&quot;&gt;Week 49&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;tr&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/56s2oa&quot;&gt;Week 10&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/5wh2wb&quot;&gt;Week 20&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/6p3ha7&quot;&gt;Week 30&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://www.reddit.com/7qel9p&quot;&gt;Week 40&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;a href=&quot;https://reddit.com/9cf158&quot;&gt;Week 50&lt;/a&gt;&lt;/td&gt; &lt;td&gt;&lt;/td&gt; &lt;/tr&gt; &lt;/tbody&gt;&lt;/table&gt; &lt;p&gt;Most upvoted papers two weeks ago:&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;/u/blackbearx3&quot;&gt;/u/blackbearx3&lt;/a&gt;: &lt;a href=&quot;http://proceedings.mlr.press/v5/titsias09a.html&quot;&gt;Variational Learning of Inducing Variables in Sparse Gaussian Processes&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;/u/wassname&quot;&gt;/u/wassname&lt;/a&gt;: &lt;a href=&quot;https://papers.nips.cc/paper/8200-non-delusional-q-learning-and-value-iteration.pdf&quot;&gt;Non-Delusional Q-Learning and Value-Iteration&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Besides that, there are no rules, have fun.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ML_WAYR_bot&quot;&gt; /u/ML_WAYR_bot &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8yaro/d_machine_learning_wayr_what_are_you_reading_week/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8yaro/d_machine_learning_wayr_what_are_you_reading_week/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a8yaro</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a8yaro/d_machine_learning_wayr_what_are_you_reading_week/" />
+    <updated>2018-12-23T21:00:06+00:00</updated>
+    <title>[D] Machine Learning - WAYR (What Are You Reading) - Week 53</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/tldrtldreverything</name>
+      <uri>https://www.reddit.com/user/tldrtldreverything</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hey, I published a summary of a new paper from FAIR called SlowFast. The paper details a cool technique which allows to understand what&amp;#39;s happening in images by using two neural networks - a &amp;#39;slow&amp;#39; CNN that recognizes the fine content of the image and a &amp;#39;fast&amp;#39; CNN that recognizes swift changes in the content. Full summary here: &lt;a href=&quot;https://lyrn.ai/2018/12/21/slowfast-dual-mode-cnn-for-video-understanding/&quot;&gt;https://lyrn.ai/2018/12/21/slowfast-dual-mode-cnn-for-video-understanding/&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/tldrtldreverything&quot;&gt; /u/tldrtldreverything &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9qkns/r_slowfast_dualmode_cnn_for_video_understanding/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9qkns/r_slowfast_dualmode_cnn_for_video_understanding/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9qkns</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9qkns/r_slowfast_dualmode_cnn_for_video_understanding/" />
+    <updated>2018-12-26T17:44:07+00:00</updated>
+    <title>[R] SlowFast - Dual-mode CNN for Video Understanding</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Richard_wth</name>
+      <uri>https://www.reddit.com/user/Richard_wth</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&lt;strong&gt;TL;DR&lt;/strong&gt;: Rearranging the terms in maximum mean discrepancy yields a much better loss function for the discriminator of generative adversarial nets&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;:&lt;/p&gt; &lt;p&gt;Spectral normalization, repulsive loss, bounded RBF kernel&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Abstract&lt;/strong&gt;:&lt;/p&gt; &lt;p&gt;Generative adversarial nets (GANs) are widely used to learn the data sampling process and their performance may heavily depend on the loss functions, given a limited computational budget. This study revisits MMD-GAN that uses the maximum mean discrepancy (MMD) as the loss function for GAN and makes two contributions. First, we argue that the existing MMD loss function may discourage the learning of fine details in data as it attempts to contract the discriminator outputs of real data. To address this issue, we propose a repulsive loss function to actively learn the difference among the real data by simply rearranging the terms in MMD. Second, inspired by the hinge loss, we propose a bounded Gaussian kernel to stabilize the training of MMD-GAN with the repulsive loss function. The proposed methods are applied to the unsupervised image generation tasks on CIFAR-10, STL-10, CelebA, and LSUN bedroom datasets. Results show that the repulsive loss function significantly improves over the MMD loss at no additional computational cost and outperforms other representative loss functions. The proposed methods achieve an FID score of 16.21 on the CIFAR-10 dataset using a single DCGAN network and spectral normalization.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Links&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;OpenReview link: &lt;a href=&quot;https://openreview.net/forum?id=HygjqjR9Km&quot;&gt;https://openreview.net/forum?id=HygjqjR9Km&lt;/a&gt;&lt;/p&gt; &lt;p&gt;arXiv link: &lt;a href=&quot;https://arxiv.org/abs/1812.09916&quot;&gt;https://arxiv.org/abs/1812.09916&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Code link: &lt;a href=&quot;https://github.com/richardwth/MMD-GAN&quot;&gt;https://github.com/richardwth/MMD-GAN&lt;/a&gt;&lt;/p&gt; &lt;p&gt;---------------------------------------------&lt;/p&gt; &lt;p&gt;Good day, mate!&lt;/p&gt; &lt;p&gt;I am the first author of this GAN paper that proposes a new loss function, a slightly modified spectral normalization method, and a bounded RBF kernel. The methods works very well with DCGAN architecture. &lt;/p&gt; &lt;p&gt;Please take a few minutes to read the paper. Any comments are welcomed and I am happy to answer any questions in this extremely hot Christmas (yes I am in Australia and we stand upside down). &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Richard_wth&quot;&gt; /u/Richard_wth &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9vh36/r_iclr_poster_improving_mmdgan_training_with/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9vh36/r_iclr_poster_improving_mmdgan_training_with/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9vh36</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9vh36/r_iclr_poster_improving_mmdgan_training_with/" />
+    <updated>2018-12-27T03:29:34+00:00</updated>
+    <title>[R] [ICLR poster] Improving MMD-GAN Training with Repulsive Loss Function</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/ak96</name>
+      <uri>https://www.reddit.com/user/ak96</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am trying to build a model which can extract information from a pdf/html file and use it for answering questions which are asked later. So, for example, I have a page on a football club which has information about its captain, manager, owner etc. and I want to extract it and store it for later retrieval upon request. You guys have any suggestions on how to do it? Or any papers that you can point me to? &lt;/p&gt; &lt;p&gt;(Similar to Question Answering model using RNNs with bi-directional LSTMs/GRUs)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ak96&quot;&gt; /u/ak96 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9su90/p_a_knowledge_extractor_from_text/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9su90/p_a_knowledge_extractor_from_text/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9su90</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9su90/p_a_knowledge_extractor_from_text/" />
+    <updated>2018-12-26T22:00:54+00:00</updated>
+    <title>[P] A knowledge extractor from text</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/baylearn</name>
+      <uri>https://www.reddit.com/user/baylearn</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;A browser based &lt;a href=&quot;https://mishig25.github.io/neuroevolution-robots/&quot;&gt;environment&lt;/a&gt; where humanoids are trained to walk through Neuroevolution of Augmenting Topologies (&lt;a href=&quot;http://nn.cs.utexas.edu/downloads/papers/stanley.gecco02_1.pdf&quot;&gt;NEAT&lt;/a&gt;).&lt;/p&gt; &lt;p&gt;Web Demo: &lt;a href=&quot;https://mishig25.github.io/neuroevolution-robots/&quot;&gt;https://mishig25.github.io/neuroevolution-robots/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Tools used:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;&lt;a href=&quot;https://js.tensorflow.org&quot;&gt;TensorFlow.js&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;https://github.com/wagenaartje/neataptic&quot;&gt;Neataptic.js&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;http://piqnt.com/planck.js/&quot;&gt;Planck.js&lt;/a&gt; (a Box2D rewrite)&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;a href=&quot;https://mishig25.github.io/neuroevolution-robots/&quot;&gt;https://mishig25.github.io/neuroevolution-robots/&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/baylearn&quot;&gt; /u/baylearn &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9nn5m/p_neuroevolutionbots/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9nn5m/p_neuroevolutionbots/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9nn5m</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9nn5m/p_neuroevolutionbots/" />
+    <updated>2018-12-26T10:48:36+00:00</updated>
+    <title>[P] Neuroevolution-Bots</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Anogio94</name>
+      <uri>https://www.reddit.com/user/Anogio94</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi! Since the GDPR laws in Europe came into effect, it is now possible to download your complete Facebook data as JSON files (messages, comments, connexion ips, friends...) Many of us have been using Facebook for years, so it&amp;#39;s usually a large dataset with lots of opportunities for some cool data viz (or even NLP?) :) I am currently working on a script that would allow anyone to perform analytics on their own data and build nice graphs. I&amp;#39;ve got most of the boilerplate down and I would really appreciate some inputs on what kind of analytics you guys would find interesting!&lt;/p&gt; &lt;p&gt;A map showing connexion locations? An activity graph ? Friends network? Sentiment analysis ? I know there is quite a lot of fun stuff to do and I would like to get my priorities right&lt;/p&gt; &lt;p&gt;It&amp;#39;s far from ready for now, but I&amp;#39;ll make sure to share the repo in the future if anyone is interested :)&lt;/p&gt; &lt;p&gt;PS: I was sure that this would already exist, and I did some looking around and could not find anything. If you know about a similar project do let me know! &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Anogio94&quot;&gt; /u/Anogio94 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9oblj/d_what_would_you_like_to_know_about_your_own/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9oblj/d_what_would_you_like_to_know_about_your_own/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9oblj</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9oblj/d_what_would_you_like_to_know_about_your_own/" />
+    <updated>2018-12-26T12:50:14+00:00</updated>
+    <title>[D] What would you like to know about your own Facebook data? (Data viz, NLP)</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/downtownslim</name>
+      <uri>https://www.reddit.com/user/downtownslim</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9qlnx/riclr_oral_learning_unsupervised_learning_rules/&quot;&gt; &lt;img src=&quot;https://a.thumbs.redditmedia.com/O5xSqPxXQan0eq4XIj_39G9lsyFLtyg3D_81hYNOIr4.jpg&quot; alt=&quot;[R][ICLR Oral] Learning Unsupervised Learning Rules&quot; title=&quot;[R][ICLR Oral] Learning Unsupervised Learning Rules&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/downtownslim&quot;&gt; /u/downtownslim &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://openreview.net/forum?id=HkNDsiC9KQ&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9qlnx/riclr_oral_learning_unsupervised_learning_rules/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content>
+    <id>t3_a9qlnx</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9qlnx/riclr_oral_learning_unsupervised_learning_rules/" />
+    <updated>2018-12-26T17:47:22+00:00</updated>
+    <title>[R][ICLR Oral] Learning Unsupervised Learning Rules</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/BatmantoshReturns</name>
+      <uri>https://www.reddit.com/user/BatmantoshReturns</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Last year&amp;#39;s thread &lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/7nrzhn/d_results_from_best_of_machine_learning_2017/&quot;&gt;https://www.reddit.com/r/MachineLearning/comments/7nrzhn/d_results_from_best_of_machine_learning_2017/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Vote for:&lt;/p&gt; &lt;p&gt;Best paper&lt;/p&gt; &lt;p&gt;Best innovation &lt;/p&gt; &lt;p&gt;Best application&lt;/p&gt; &lt;p&gt;Best video&lt;/p&gt; &lt;p&gt;Best youtube channel&lt;/p&gt; &lt;p&gt;Best blog post&lt;/p&gt; &lt;p&gt;Best blog overall&lt;/p&gt; &lt;p&gt;Best course (released in 2018)&lt;/p&gt; &lt;p&gt;Best book (released in 2018)&lt;/p&gt; &lt;p&gt;Best reddit comment/post&lt;/p&gt; &lt;p&gt;Best Cross Validated - Stack Exchange posts&lt;/p&gt; &lt;p&gt;Best project&lt;/p&gt; &lt;p&gt;Best new tool&lt;/p&gt; &lt;p&gt;Anything else?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/BatmantoshReturns&quot;&gt; /u/BatmantoshReturns &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9u7t9/d_vote_for_best_of_machine_learning_for_2018/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9u7t9/d_vote_for_best_of_machine_learning_for_2018/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9u7t9</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9u7t9/d_vote_for_best_of_machine_learning_for_2018/" />
+    <updated>2018-12-27T00:49:03+00:00</updated>
+    <title>[D] Vote for Best of Machine Learning for 2018 -Categories include papers, talks, videos, applications, projects, reddit comments, Cross Validated - Stack Exchange posts, innovations, tools, and projects.</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/neuralPr0cess0r</name>
+      <uri>https://www.reddit.com/user/neuralPr0cess0r</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Non-Adversarial Image Synthesis with Generative Latent Nearest Neighbors&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1812.08985v1&quot;&gt;https://arxiv.org/abs/1812.08985v1&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;A very interesting paper by Facebook. In this paper they describe a method to create an image-generator that has many of the same qualities of a &amp;#39;standard&amp;#39; GAN generator but without the hassle of actually training a GAN. This means the training is more stable, less chance of mode collapse, faster to train ... etc &lt;/p&gt; &lt;p&gt;They achieve this by first projecting their dataset into a low-dimensional space. This low-dimensional space is then used as input into a generator. The generator maps each projected-low-dimensional point into its complementary image. The image quality is then judges by a VGG-perceptual metric. (how similar is the generated image in VGG-feature space to the original) Finally, they learn a layer that maps noise vectors into good spots within the previously projected low-D space.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/neuralPr0cess0r&quot;&gt; /u/neuralPr0cess0r &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9hy55/p_nonadversarial_image_synthesis_with_generative/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9hy55/p_nonadversarial_image_synthesis_with_generative/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9hy55</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9hy55/p_nonadversarial_image_synthesis_with_generative/" />
+    <updated>2018-12-25T20:19:13+00:00</updated>
+    <title>[P] Non-Adversarial Image Synthesis with Generative Latent Nearest Neighbors &lt;- Make pictures, no GAN!</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/whria78</name>
+      <uri>https://www.reddit.com/user/whria78</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello, I am Han Seung Seog from I Dermatology clinic.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;The automatic screening system consists of 1) &lt;strong&gt;blob-detector&lt;/strong&gt;, 2) &lt;strong&gt;fine-image-selector&lt;/strong&gt;, and 3) &lt;strong&gt;malignancy-classifier&lt;/strong&gt;.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;ol&gt; &lt;li&gt;The blob-detector was trained with py-faster-RCNN (model = VGG-16) and approximately 25,000 nodular disorder images (&lt;a href=&quot;https://www.ncbi.nlm.nih.gov/pubmed/29428356&quot;&gt;https://www.ncbi.nlm.nih.gov/pubmed/29428356&lt;/a&gt;) + 100,000 ImageNet images.&lt;/li&gt; &lt;li&gt;The fine-image-selector was trained with NVCaffe (model = ensemble the results of SE-ResNext-50 and SE-ResNet-50) and over 500,000 images (clinical images - 400,000; ImageNet images - 100,000). It check both focus and composition of the image.&lt;/li&gt; &lt;li&gt;The malignancy-classifier (Model Dermatology; version 20181225; The old (20180623) version of the Model Dermatology is currently available at &lt;a href=&quot;http://modelderm.com&quot;&gt;http://modelderm.com&lt;/a&gt;) was trained with NVCaffe (model = ensemble the results of SENet and SE-ResNext-50) and over 230,000 images (220,000 - clinical diagnosis; over 10,000 - generated by RCNN technology and the diagnosis had been tagged by dermatologist from image findings).&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Screenshot :&lt;/strong&gt; &lt;a href=&quot;https://i.redd.it/0d1ittotwf621.jpg&quot;&gt;&lt;strong&gt;https://i.redd.it/0d1ittotwf621.jpg&lt;/strong&gt;&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;The screenshot was created by testing our algorithm with 8 high-resolution images which were downloaded via search engine (image.google.com).&lt;/p&gt; &lt;ol&gt; &lt;li&gt;Before&lt;/li&gt; &lt;li&gt;After blob-detector&lt;/li&gt; &lt;li&gt;After fine-image-selector&lt;/li&gt; &lt;li&gt;After malignancy-classifier (malignancy scoring and Top-1 diagnosis are shown)&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;Although artificial intelligence had been shown dermatologist-level performance in several studies, the most difficult problem that should be solved in skin cancer screening is false positive problem. We are working to reduce the false positive by generating a lot of skin blobs and training the algorithm with those images.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/whria78&quot;&gt; /u/whria78 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9fmzq/p_automatic_skin_cancer_screening_with/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9fmzq/p_automatic_skin_cancer_screening_with/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9fmzq</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9fmzq/p_automatic_skin_cancer_screening_with/" />
+    <updated>2018-12-25T15:29:20+00:00</updated>
+    <title>[P] Automatic Skin Cancer Screening with Region-based CNN</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/RKuurstra</name>
+      <uri>https://www.reddit.com/user/RKuurstra</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hellow everyone,&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;I&amp;#39;m a long time stalker of this subreddit. I have no background in this field ( not work or even relevant degrees ), but I really love it! I&amp;#39;m a videogame programmer, and in my free time I always &amp;quot;try stuff&amp;quot; in this field to hone my skills as such.&lt;/p&gt; &lt;p&gt;So I have several projects, and recently I opened few of them to the public!&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;In &lt;a href=&quot;https://gitlab.com/kuurstra.renato/NeuralNetworksStatic/wikis/Genetic-algorithm-and-Neural-Networks-in-real-time&quot;&gt;this project&lt;/a&gt; I was trying to apply Genetic Algorithm approach to train neural networks in real time. The link is on a small wiki page of the site of the library project. The main goal for me was trying to learn how GA works ( or don&amp;#39;t!:p) with neural networks and learn how to exploit ( or don&amp;#39;t!:p ) it in a video game environment.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;The &lt;a href=&quot;https://gitlab.com/kuurstra.renato/NNetworkTest/wikis/Neural-networks-using-Unreal-Engine-4.15&quot;&gt;other project&lt;/a&gt; use this library in two small &amp;quot;gyms&amp;quot;. One of such is the classic &amp;quot;drive the car on the circuit&amp;quot; problem, which is the most succesfull one. The framework is Unreal Engine 4.15, and I made use of both c++ and blueprints.&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;Beside hoping that some of you big guys find this at least a bit interesting I have a few questions:&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;1)The only paper I found doing something similar ( very similar :D ) is from &lt;a href=&quot;http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.728.5120&amp;amp;rep=rep1&amp;amp;type=pdf#page=182&quot;&gt;Stanley&lt;/a&gt;. It took me a LOT to find. The only way seem to read all the papers and memorizing &amp;quot;what&amp;#39;s going on&amp;quot;. But as a amateur doing this in my free time this is extremely difficult! Any hint?&lt;/p&gt; &lt;p&gt;2) I&amp;#39;m currently unemployed, do you think these projects are too amateurish to be added to my resume or they could make some sort of good impression in a possible employer ( most likely video game )?&lt;/p&gt; &lt;p&gt;3) What should I focus more on my future projects? Should the code be more readable? More optimize? I try to make the code as readable as possible, but since the scope of these projects are very small I also tend to try and go for &amp;quot;shortcuts&amp;quot; as much as possible. I see this in a lot of research projects too, should I keep it like this?4) What you would add to the wikis?&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;Thanks a lot if you have read all of this ^_^&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/RKuurstra&quot;&gt; /u/RKuurstra &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9exmg/p_real_time_genetic_algorithm_applied_to_neural/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9exmg/p_real_time_genetic_algorithm_applied_to_neural/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9exmg</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9exmg/p_real_time_genetic_algorithm_applied_to_neural/" />
+    <updated>2018-12-25T13:40:15+00:00</updated>
+    <title>[P] Real Time Genetic Algorithm applied to Neural Networks</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/alexmlamb</name>
+      <uri>https://www.reddit.com/user/alexmlamb</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hello, &lt;/p&gt; &lt;p&gt;Sometimes, when I&amp;#39;ve done multi-class classification, I&amp;#39;ve used the binary cross entropy on all of the labels, but after the softmax. &lt;/p&gt; &lt;p&gt;Putting aside the question of whether this is ideal - it seems to yield a different loss from doing categorical cross entropy after the softmax. &lt;/p&gt; &lt;p&gt;I did some math on both of the losses and they seem different in a way that doesn&amp;#39;t yield an obvious mathematical correspondence. Both push up the value on the &amp;quot;true&amp;quot; class, but they have different normalization terms (pushing down pre-softmax on non-selected classes). &lt;/p&gt; &lt;p&gt;I ran this in Pytorch: &lt;/p&gt; &lt;pre&gt;&lt;code&gt;&amp;gt;&amp;gt;&amp;gt; p = torch.Tensor([0.9, 0.05, 0.02, 0.03]) &amp;gt;&amp;gt;&amp;gt; nll(p.unsqueeze(0),torch.LongTensor([0])) tensor(-0.9000) &amp;gt;&amp;gt;&amp;gt; nll(p.unsqueeze(0),torch.LongTensor([1])) tensor(-0.0500) &amp;gt;&amp;gt;&amp;gt; nll(p.unsqueeze(0),torch.LongTensor([2])) tensor(-0.0200) &amp;gt;&amp;gt;&amp;gt; nll(p.unsqueeze(0),torch.LongTensor([3])) tensor(-0.0300) &amp;gt;&amp;gt;&amp;gt; y = torch.Tensor([0.0, 1.0, 0.0, 0.0]) &amp;gt;&amp;gt;&amp;gt; bce(p,torch.Tensor([1.0, 0.0, 0.0, 0.0])) tensor(0.0518) &amp;gt;&amp;gt;&amp;gt; bce(p,torch.Tensor([0.0, 1.0, 0.0, 0.0])) tensor(1.3372) &amp;gt;&amp;gt;&amp;gt; bce(p,torch.Tensor([0.0, 0.0, 1.0, 0.0])) tensor(1.5741) &amp;gt;&amp;gt;&amp;gt; bce(p,torch.Tensor([0.0, 0.0, 0.0, 1.0])) tensor(1.4702) &lt;/code&gt;&lt;/pre&gt; &lt;p&gt;Both give the same rank-order, but the values are rather different. &lt;/p&gt; &lt;p&gt;Do you know if there are any derivations or math comparing these two losses? Or maybe a better intuition on why one is better than the other? &lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/alexmlamb&quot;&gt; /u/alexmlamb &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9k4y4/d_using_binary_cross_entropy_loss_after_softmax/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9k4y4/d_using_binary_cross_entropy_loss_after_softmax/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9k4y4</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9k4y4/d_using_binary_cross_entropy_loss_after_softmax/" />
+    <updated>2018-12-26T01:16:22+00:00</updated>
+    <title>[D] Using Binary Cross Entropy Loss after Softmax for Multi-class Classification</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/xmxman</name>
+      <uri>https://www.reddit.com/user/xmxman</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Im working on a couple of projects which requires computer vision for web on a client side essentially is object detection from webcam stream. I found couple libraries &lt;a href=&quot;https://gammacv.com&quot;&gt;https://gammacv.com&lt;/a&gt;, &lt;a href=&quot;https://inspirit.github.io/jsfeat&quot;&gt;https://inspirit.github.io/jsfeat&lt;/a&gt; which can help to build things similar to OpenCV, also TensorFlow.js is now available for browser but it is maybe heavy to use because of model size and performance. It is a very interesting to me, does anyone have an experience to use CV for a web in production&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/xmxman&quot;&gt; /u/xmxman &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9eim0/d_computer_vision_in_browser/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9eim0/d_computer_vision_in_browser/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9eim0</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9eim0/d_computer_vision_in_browser/" />
+    <updated>2018-12-25T12:23:34+00:00</updated>
+    <title>[D] Computer Vision in browser</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/finallyifoundvalidUN</name>
+      <uri>https://www.reddit.com/user/finallyifoundvalidUN</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;In the following paper the author says &amp;quot; Linear behavior in high-dimensional spaces is sufficient to cause adversarial examples&amp;quot;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://arxiv.org/abs/1412.6572&quot;&gt;https://arxiv.org/abs/1412.6572&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/finallyifoundvalidUN&quot;&gt; /u/finallyifoundvalidUN &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9l52l/d_do_deep_learning_models_behave_linear_in_high/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9l52l/d_do_deep_learning_models_behave_linear_in_high/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9l52l</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9l52l/d_do_deep_learning_models_behave_linear_in_high/" />
+    <updated>2018-12-26T03:43:04+00:00</updated>
+    <title>[D] do deep learning models behave linear in high dimensional space?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/ljvmiranda</name>
+      <uri>https://www.reddit.com/user/ljvmiranda</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi all, &lt;/p&gt; &lt;p&gt;For the holidays, we made a holiday card generator to give to our workmates and friends, thought I might share this here too! &lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://stories.thinkingmachin.es/ai-art-holiday-cards/&quot;&gt;https://stories.thinkingmachin.es/ai-art-holiday-cards/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Given an input string, it looks for the nearest Quick, Draw! class and draws it using Sketch-RNN, then we applied style transfer to the output image.&lt;/p&gt; &lt;p&gt;We also open-sourced our pipeline here:&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://github.com/thinkingmachines/christmAIs&quot;&gt;https://github.com/thinkingmachines/christmAIs&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Feel free to check that out!&lt;/p&gt; &lt;p&gt;Happy Holidays!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/ljvmiranda&quot;&gt; /u/ljvmiranda &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9ddu8/p_holiday_card_generator_using_sketchrnn_and/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9ddu8/p_holiday_card_generator_using_sketchrnn_and/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9ddu8</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9ddu8/p_holiday_card_generator_using_sketchrnn_and/" />
+    <updated>2018-12-25T08:31:48+00:00</updated>
+    <title>[P] Holiday card generator using Sketch-RNN and Style Transfer</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/riot-nerf-red-buff</name>
+      <uri>https://www.reddit.com/user/riot-nerf-red-buff</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;P.s.: I did not expect so many amazing answers. Thanks, and Happy Christmas to everyone!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/riot-nerf-red-buff&quot;&gt; /u/riot-nerf-red-buff &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9ajc6/d_how_often_do_you_implement_mls_algorithms_by/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9ajc6/d_how_often_do_you_implement_mls_algorithms_by/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9ajc6</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9ajc6/d_how_often_do_you_implement_mls_algorithms_by/" />
+    <updated>2018-12-25T00:53:15+00:00</updated>
+    <title>[D] How often do you implement ML's algorithms &quot;by hand&quot; opposed to using a programming library?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/hanyuqn</name>
+      <uri>https://www.reddit.com/user/hanyuqn</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am trying to find an open source project that can achieve similar results to Deep Video Portraits (&lt;a href=&quot;https://www.youtube.com/watch?v=qc5P2bvfl44&quot;&gt;https://www.youtube.com/watch?v=qc5P2bvfl44&lt;/a&gt;) where facial expressions and body movements are transferred to a target actor. A few things I&amp;#39;ve looked at:&lt;/p&gt; &lt;ul&gt; &lt;li&gt;The AVATAR model in deepfacelab is able to transfer facial expressions (see &lt;a href=&quot;https://www.youtube.com/watch?v=3M0E4QnWMqA&quot;&gt;https://www.youtube.com/watch?v=3M0E4QnWMqA&lt;/a&gt;) but it doesn&amp;#39;t seem like the result could be put back into the original video so the body is still visible. There is this comment &lt;a href=&quot;https://github.com/iperov/DeepFaceLab/is...-448825013&quot;&gt;https://github.com/iperov/DeepFaceLab/is...-448825013&lt;/a&gt; saying it could be done but I very much doubt it would work.&lt;/li&gt; &lt;li&gt;Recycle-GAN (&lt;a href=&quot;https://www.youtube.com/watch?v=EU4BvhtEuG0&quot;&gt;https://www.youtube.com/watch?v=EU4BvhtEuG0&lt;/a&gt;) in their example has major artefacts&lt;/li&gt; &lt;li&gt;Face2Face (&lt;a href=&quot;https://www.youtube.com/watch?v=ohmajJTcpNk&quot;&gt;https://www.youtube.com/watch?v=ohmajJTcpNk&lt;/a&gt;) is implemented in a third-party repo here &lt;a href=&quot;https://github.com/datitran/face2face-demo&quot;&gt;https://github.com/datitran/face2face-demo&lt;/a&gt; but the example (&lt;a href=&quot;https://github.com/datitran/face2face-de...xample.gif&quot;&gt;https://github.com/datitran/face2face-de...xample.gif&lt;/a&gt;) is of very poor quality&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;Any suggestions welcome.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/hanyuqn&quot;&gt; /u/hanyuqn &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9fgz3/d_replicating_deep_video_portraits/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9fgz3/d_replicating_deep_video_portraits/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9fgz3</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9fgz3/d_replicating_deep_video_portraits/" />
+    <updated>2018-12-25T15:05:36+00:00</updated>
+    <title>[D] Replicating deep video portraits</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/madhavgoyal98</name>
+      <uri>https://www.reddit.com/user/madhavgoyal98</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I&amp;#39;m looking for some innovative project ideas that can be done using machine learning/deep learning.&lt;/p&gt; &lt;p&gt;The project has to be completed in 6 months.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/madhavgoyal98&quot;&gt; /u/madhavgoyal98 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9htnd/p_need_ideas_for_undergrad_final_year_project/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9htnd/p_need_ideas_for_undergrad_final_year_project/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9htnd</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9htnd/p_need_ideas_for_undergrad_final_year_project/" />
+    <updated>2018-12-25T20:03:15+00:00</updated>
+    <title>&quot;[P]&quot; Need ideas for undergrad final year project</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/b0red1337</name>
+      <uri>https://www.reddit.com/user/b0red1337</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Hi all,&lt;/p&gt; &lt;p&gt;This is my attempt to solve the Tetris environment using MCTS and TD learning inspired by AlphaGo Zero.&lt;/p&gt; &lt;p&gt;At 400 games of self-plays, the agent surpassed the vanilla MCTS (random policy rollouts) which has an average of 7 lines cleared per game.&lt;/p&gt; &lt;p&gt;At 800 games of self-plays, the agent was able to clear more than 1300 lines in a single game which to the best of my knowledge is the best result without using any heuristics. (I couldn&amp;#39;t find many papers on the topic, please let me know if I&amp;#39;m wrong.)&lt;/p&gt; &lt;p&gt;Here is a video showing the agent in action&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=EALo2GfZuYU&quot;&gt;https://www.youtube.com/watch?v=EALo2GfZuYU&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Here is the git repo in case you are interested&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://github.com/hrpan/tetris_mcts&quot;&gt;https://github.com/hrpan/tetris_mcts&lt;/a&gt;&lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;Let me know what you think!&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/b0red1337&quot;&gt; /u/b0red1337 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a97rl3/p_learning_to_play_tetris_with_mcts_and_td/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a97rl3/p_learning_to_play_tetris_with_mcts_and_td/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a97rl3</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a97rl3/p_learning_to_play_tetris_with_mcts_and_td/" />
+    <updated>2018-12-24T19:09:14+00:00</updated>
+    <title>[P] Learning to play Tetris with MCTS and TD learning</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/TheShadow29</name>
+      <uri>https://www.reddit.com/user/TheShadow29</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am looking for papers in the field of forgery detection. Like if a part of the image is replaced by a GAN generated input then how to detect that part? Or if the whole image is generated by a GAN how to classify it as a synthetic image?&lt;/p&gt; &lt;p&gt;The papers I have found are: &lt;/p&gt; &lt;ol&gt; &lt;li&gt;&lt;p&gt;Buster Net for copy move forge detection: &lt;a href=&quot;http://openaccess.thecvf.com/content_ECCV_2018/papers/Rex_Yue_Wu_BusterNet_Detecting_Copy-Move_ECCV_2018_paper.pdf&quot;&gt;http://openaccess.thecvf.com/content_ECCV_2018/papers/Rex_Yue_Wu_BusterNet_Detecting_Copy-Move_ECCV_2018_paper.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;Face Tamper Detection: &lt;a href=&quot;https://arxiv.org/pdf/1803.11276.pdf&quot;&gt;https://arxiv.org/pdf/1803.11276.pdf&lt;/a&gt;&lt;/p&gt;&lt;/li&gt; &lt;/ol&gt; &lt;p&gt;Wanted to know if anyone is aware of any other papers.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/TheShadow29&quot;&gt; /u/TheShadow29 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9aes4/d_defenses_against_gan_generated_images_for_image/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9aes4/d_defenses_against_gan_generated_images_for_image/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9aes4</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9aes4/d_defenses_against_gan_generated_images_for_image/" />
+    <updated>2018-12-25T00:35:11+00:00</updated>
+    <title>[D] Defenses against GAN generated images for Image Forensics and forgery detection</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/OldManufacturer</name>
+      <uri>https://www.reddit.com/user/OldManufacturer</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;My question is this: is it possible to generate some metrics that would effectively explain why ML algorithm A (SVM for example) would perform better than B for a given feature space? I know that they each have their strengths and weaknesses. But what if we don’t know the exact nature of our data set? Is there some way to look at an unknown feature space and narrow down our list of competitive ML algorithms without actually testing each one (and thus dealing with a computationally expensive experiment)?&lt;/p&gt; &lt;p&gt;I would guess that variance in each feature would be an important piece of information, but could it be used to assume that one algorithm would perform better than the rest?&lt;/p&gt; &lt;p&gt;Edit: My title is misleading and should read “Predicting” not “Deciphering”&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/OldManufacturer&quot;&gt; /u/OldManufacturer &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9bqly/r_deciphering_the_performance_of_different_ml/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9bqly/r_deciphering_the_performance_of_different_ml/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9bqly</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9bqly/r_deciphering_the_performance_of_different_ml/" />
+    <updated>2018-12-25T03:54:14+00:00</updated>
+    <title>[R] Deciphering the performance of different ML algorithms on a given feature space</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/dcn20002</name>
+      <uri>https://www.reddit.com/user/dcn20002</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;I am currently doing a project to write a learning algorithm to predict user behavior based on several factors. Most of which are text which I use bag of words to detect the frequency and recode them into 1 or 0. For the rest, they are continuous variable (age, etc). &lt;/p&gt; &lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;I want to figure which is the correct regression model to use. I am not an expert at statistics and would need to brush up on this topic. I wonder any of you have an advice on this?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/dcn20002&quot;&gt; /u/dcn20002 &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9c4n4/p_running_regression_on_both_binary_and/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a9c4n4/p_running_regression_on_both_binary_and/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a9c4n4</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a9c4n4/p_running_regression_on_both_binary_and/" />
+    <updated>2018-12-25T04:54:22+00:00</updated>
+    <title>[P] Running regression on both binary and continuous variables?​​​</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/maroonedscientist</name>
+      <uri>https://www.reddit.com/user/maroonedscientist</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;As the title says, so many papers I read now seem to be demonstrating a result, with relatively little discussion about the network design decisions. I&amp;#39;m interested to find papers more focused on the theory of network design, network operation, training methods, dataset requirements, provability, network pruning, etc... &lt;/p&gt; &lt;p&gt;Any advice on specific papers or sources of papers that would meet these needs?&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/maroonedscientist&quot;&gt; /u/maroonedscientist &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8xjh0/d_im_tired_of_reading_resultsoriented_papers_what/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8xjh0/d_im_tired_of_reading_resultsoriented_papers_what/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a8xjh0</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a8xjh0/d_im_tired_of_reading_resultsoriented_papers_what/" />
+    <updated>2018-12-23T19:31:32+00:00</updated>
+    <title>[D] I'm tired of reading results-oriented papers. What are good papers or sources of papers more focused on the emerging theory of machine learning?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/UltraMarathonMan</name>
+      <uri>https://www.reddit.com/user/UltraMarathonMan</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;This is a conversation with Juergen Schmidhuber, co-creator of long short-term memory networks (LSTMs) which are used in billions of devices today for speech recognition, translation, and much more. Over 30 years, he has proposed a lot of interesting, out-of-the-box ideas in artificial intelligence including a formal theory of creativity.&lt;/p&gt; &lt;p&gt;Podcast version: &lt;a href=&quot;https://lexfridman.com/juergen-schmidhuber&quot;&gt;https://lexfridman.com/juergen-schmidhuber&lt;/a&gt;&lt;/p&gt; &lt;p&gt;YouTube video: &lt;a href=&quot;https://www.youtube.com/watch?v=3FIo6evmweo&quot;&gt;https://www.youtube.com/watch?v=3FIo6evmweo&lt;/a&gt;&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/UltraMarathonMan&quot;&gt; /u/UltraMarathonMan &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8whi9/d_conversation_with_juergen_schmidhuber_on_godel/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8whi9/d_conversation_with_juergen_schmidhuber_on_godel/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a8whi9</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a8whi9/d_conversation_with_juergen_schmidhuber_on_godel/" />
+    <updated>2018-12-23T17:29:18+00:00</updated>
+    <title>[D] Conversation with Juergen Schmidhuber on Godel Machines, Meta-Learning, and LSTMs</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/Kohomology</name>
+      <uri>https://www.reddit.com/user/Kohomology</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;Subtitle: What causes the &amp;quot;speaking into a fan&amp;quot; warble in Text-To-Speech models? &lt;/p&gt; &lt;p&gt;I&amp;#39;m training a TTS model (A custom modification of &lt;a href=&quot;https://github.com/Kyubyong/dc_tts&quot;&gt;https://github.com/Kyubyong/dc_tts&lt;/a&gt;) on a medium-quality custom dataset (speech from TV news), and a professionally-recorded dataset. &lt;/p&gt; &lt;p&gt;The results from training on the TV news dataset have the distinctive &amp;quot;speaking into a fan&amp;quot; warble that you can hear in samples from many open-source models.&lt;/p&gt; &lt;p&gt;Examples of the warbling I&amp;#39;m talking about: &lt;a href=&quot;https://soundcloud.com/kyubyong-park/sets/tacotron_lj_200k&quot;&gt;https://soundcloud.com/kyubyong-park/sets/tacotron_lj_200k&lt;/a&gt;&lt;/p&gt; &lt;p&gt;and to a lesser extent: &lt;a href=&quot;https://keithito.github.io/audio-samples/&quot;&gt;https://keithito.github.io/audio-samples/&lt;/a&gt;&lt;/p&gt; &lt;p&gt;I can&amp;#39;t seem to get rid of the warbling when training on the TV news data, but the warbling is unnoticeable when I train on the professionally-recorded data. So I&amp;#39;m leaning towards assuming that this is a problem with the training data that seems to be present in many open datasets as well (the two samples posted above were trained on the LJ speech dataset). But just listening to the &amp;quot;bad&amp;quot; and &amp;quot;good&amp;quot; datasets by ear, I can&amp;#39;t tell what the problem is.&lt;/p&gt; &lt;p&gt;Hence my question:&lt;/p&gt; &lt;p&gt;What subtle problems can there be in a text-to-speech dataset? I am particularly interested in the cause of the warbling mentioned above, but would be glad to learn about unrelated problems as well.&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/Kohomology&quot;&gt; /u/Kohomology &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a90u3t/d_what_makes_a_good_texttospeech_dataset/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a90u3t/d_what_makes_a_good_texttospeech_dataset/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt;</content>
+    <id>t3_a90u3t</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a90u3t/d_what_makes_a_good_texttospeech_dataset/" />
+    <updated>2018-12-24T02:21:36+00:00</updated>
+    <title>[D] What makes a good text-to-speech dataset?</title>
+  </entry>
+  <entry>
+    <author>
+      <name>/u/victorianoi</name>
+      <uri>https://www.reddit.com/user/victorianoi</uri>
+    </author>
+    <category term="MachineLearning" label="r/MachineLearning"/>
+    <content type="html">&lt;table&gt; &lt;tr&gt;&lt;td&gt; &lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8v8ya/project_p_analyzing_rmachinelearning_2018_posts/&quot;&gt; &lt;img src=&quot;https://b.thumbs.redditmedia.com/b75HruH5OObtt67ElaABaD5CeR4m5lv5WzUnIj5I37w.jpg&quot; alt=&quot;[Project] [P] Analyzing r/MachineLearning 2018 posts with Graphext unsupervised NLP algorithms&quot; title=&quot;[Project] [P] Analyzing r/MachineLearning 2018 posts with Graphext unsupervised NLP algorithms&quot; /&gt; &lt;/a&gt; &lt;/td&gt;&lt;td&gt; &lt;!-- SC_OFF --&gt;&lt;div class=&quot;md&quot;&gt;&lt;p&gt;&amp;#x200B;&lt;/p&gt; &lt;p&gt;&lt;a href=&quot;https://i.redd.it/94jirwc3j1621.jpg&quot;&gt;2509 posts from r/MachineLearning in 2018 clustered with Graphext&lt;/a&gt;&lt;/p&gt; &lt;p&gt;We at &lt;strong&gt;Graphext&lt;/strong&gt; ( &lt;a href=&quot;https://twitter.com/graphext&quot;&gt;@graphext&lt;/a&gt; ) use word2vec + dimensionality reduction + network algorithms to cluster all type of data, from text to images to numerical and categorical vectors to spot unsupervised patterns, among many other things in data science. I scraped all the posts in &lt;a href=&quot;https://www.reddit.com/r/MachineLearning&quot;&gt;r/MachineLearning&lt;/a&gt; from &lt;a href=&quot;https://twitter.com/slashml&quot;&gt;@slashml&lt;/a&gt; uploaded to Graphext and found all these different narratives in the community.&lt;/p&gt; &lt;p&gt;Each node is a post, we connect similar posts talking about similar things, then we form a network, calculate clusters with Louvain algorithm, and find what terms characterize them more. The size of the nodes is the number of retweets they got.&lt;/p&gt; &lt;p&gt;Another day I would like to compare the evolution of each topic over the years to see what things are becoming more trending lately :)&lt;/p&gt; &lt;/div&gt;&lt;!-- SC_ON --&gt; &amp;#32; submitted by &amp;#32; &lt;a href=&quot;https://www.reddit.com/user/victorianoi&quot;&gt; /u/victorianoi &lt;/a&gt; &lt;br/&gt; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8v8ya/project_p_analyzing_rmachinelearning_2018_posts/&quot;&gt;[link]&lt;/a&gt;&lt;/span&gt; &amp;#32; &lt;span&gt;&lt;a href=&quot;https://www.reddit.com/r/MachineLearning/comments/a8v8ya/project_p_analyzing_rmachinelearning_2018_posts/&quot;&gt;[comments]&lt;/a&gt;&lt;/span&gt; &lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</content>
+    <id>t3_a8v8ya</id>
+    <link href="https://www.reddit.com/r/MachineLearning/comments/a8v8ya/project_p_analyzing_rmachinelearning_2018_posts/" />
+    <updated>2018-12-23T14:58:27+00:00</updated>
+    <title>[Project] [P] Analyzing r/MachineLearning 2018 posts with Graphext unsupervised NLP algorithms</title>
+  </entry>
+</feed>

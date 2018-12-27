@@ -5,7 +5,7 @@ Thanks, you're subscribed.
 <div class="row">
   <div class="col-md-9">
   <% @categories.each do |cat| %>
-    <div class="card">
+    <div class="card mt-3">
       <div class="card-body">
         <h4><%= cat.title %></h4>
         <table class="table">
@@ -32,10 +32,8 @@ Thanks, you're subscribed.
         <%= render "subscribers/form" %>
       </div>
     </div>
-    <div class="card bg-success" id="thanks" style="display:none;">
-      <div class="card-body">
-        <p>Thanks! Your AI news is on its way!</p>
-      </div>
+    <div class="alert alert-success mt-3" role="alert" id="thanks" style="display:none;">
+      <p>Thanks! Your AI news is on its way!</p>
     </div>
   </div>
 </div>
