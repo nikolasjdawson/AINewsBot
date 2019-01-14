@@ -7,6 +7,7 @@
     <%= f.input :first_name %>
     <%= f.input :last_name %>
     <%= f.input :email %>
+    <%= f.association :day_of_weeks, as: :check_boxes, label: 'Choose the days you would like to receive news' %>
   </div>
 
   <div class="form-actions">

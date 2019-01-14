@@ -10,11 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_11_27_060320) do
+ActiveRecord::Schema.define(version: 2019_01_14_043406) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
     t.integer "position"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "day_of_weeks", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -42,6 +48,15 @@ ActiveRecord::Schema.define(version: 2018_11_27_060320) do
     t.datetime "updated_at", null: false
     t.string "host"
     t.index ["feed_source_id"], name: "index_items_on_feed_source_id"
+  end
+
+  create_table "subscriber_days", force: :cascade do |t|
+    t.integer "subscriber_id"
+    t.integer "day_of_week_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["day_of_week_id"], name: "index_subscriber_days_on_day_of_week_id"
+    t.index ["subscriber_id"], name: "index_subscriber_days_on_subscriber_id"
   end
 
   create_table "subscribers", force: :cascade do |t|

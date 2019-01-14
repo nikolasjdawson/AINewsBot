@@ -7,13 +7,17 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-categories = [
-  {title: "News", position: 1},
-  {title: "Blogs", position: 2},
-  {title: "Research", position: 3},
-  {title: "Reddit", position: 4},
-  {title: "Twitter", position: 5}
-]
-categories.each do |cat|
-  Category.create(title: cat[:title], position: cat[:position])
+# categories = [
+#   {title: "News", position: 1},
+#   {title: "Blogs", position: 2},
+#   {title: "Research", position: 3},
+#   {title: "Reddit", position: 4},
+#   {title: "Twitter", position: 5}
+# ]
+# categories.each do |cat|
+#   Category.create(title: cat[:title], position: cat[:position])
+# end
+days = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+days.each do |d|
+  DayOfWeek.create(name: d)
 end
