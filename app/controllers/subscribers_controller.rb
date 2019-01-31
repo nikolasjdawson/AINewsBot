@@ -1,12 +1,16 @@
 class SubscribersController < ApplicationController
   skip_before_action :authenticate_user!, only: [:new, :create, :update, :confirm]
-  before_action :set_subscriber, only: [:show, :edit, :update, :destroy, :confirm]
+  before_action :set_subscriber, only: [:show, :edit, :update, :destroy, :confirm, :subscriber]
 
   # GET /subscribers
   # GET /subscribers.json
   def confirm
     @subscriber.update(is_confirmed: true)
     redirect_to root_path(confirmed: true)
+  end
+
+  def unsubscribe
+    @subscriber.update(is_subscribed: false)
   end
 
   def index
