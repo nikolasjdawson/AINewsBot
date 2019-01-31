@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :subscribers do
     member do
-      get :confirm, :unsubscribe
+      get :confirm, :unsubscribe, :resubscribe
     end
   end
   devise_for :users
