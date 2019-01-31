@@ -1,6 +1,6 @@
 class SubscribersController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new, :create, :update, :confirm]
-  before_action :set_subscriber, only: [:show, :edit, :update, :destroy, :confirm, :subscriber]
+  skip_before_action :authenticate_user!, only: [:new, :create, :update, :confirm, :unsubscribe]
+  before_action :set_subscriber, only: [:show, :edit, :update, :destroy, :confirm, :unsubscribe]
 
   # GET /subscribers
   # GET /subscribers.json
