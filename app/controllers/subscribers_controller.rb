@@ -1,5 +1,5 @@
 class SubscribersController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:new, :create, :update, :confirm, :unsubscribe, :resubscribe]
+  skip_before_action :authenticate_user!, only: [:new, :create, :update, :confirm, :unsubscribe, :resubscribe, :edit]
   before_action :set_subscriber, only: [:show, :edit, :update, :destroy, :confirm, :unsubscribe, :resubscribe]
 
   # GET /subscribers
@@ -40,7 +40,9 @@ class SubscribersController < ApplicationController
   # POST /subscribers.json
   def create
     @subscriber = Subscriber.new(subscriber_params)
-
+    if Subscriber.find_by(email: @subscriber.email)
+      Subscriber.find_by(email: @subscriber.email).destroy
+    end
     respond_to do |format|
       if @subscriber.save
         format.js
@@ -59,7 +61,7 @@ class SubscribersController < ApplicationController
   def update
     respond_to do |format|
       if @subscriber.update(subscriber_params)
-        format.html { redirect_to @subscriber, notice: 'Subscriber was successfully updated.' }
+        format.html { redirect_to root_path, notice: 'Your subscription was successfully updated.' }
         format.json { render :show, status: :ok, location: @subscriber }
       else
         format.html { render :edit }

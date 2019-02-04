@@ -6,4 +6,5 @@
     <p><%= item.title %> [<%= link_to 'Link', item.link %>] <em><%= item.host %></em></p>
   <% end %>
 <% end %>
-<%= link_to "Unsubscribe", unsubscribe_subscriber_url(@subscriber.id) %>
+<%= link_to "Unsubscribe", unsubscribe_subscriber_url(@subscriber.id) %> |
+<%= link_to "Edit your subscription", edit_subscriber_url(@subscriber.id) %>
