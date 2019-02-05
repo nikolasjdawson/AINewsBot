@@ -1,0 +1,4 @@
+$('#news').show();
+$('#news').fadeOut(3000);
+$('#new_news_source')[0].reset();
+$('#news_sources').append("<%= j render partial: 'news_sources/news_source', locals: {news_source: @news_source}%>");

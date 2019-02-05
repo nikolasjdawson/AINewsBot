@@ -1,0 +1,15 @@
+
+<%= simple_form_for(@news_source, remote: true) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :title, label: "News source title" %>
+    <%= f.invisible_captcha :subtitle %>
+    <%= f.input :link, label: "News source URL" %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>

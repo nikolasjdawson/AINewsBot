@@ -1,0 +1,15 @@
+<h1>A news source suggestion has been submitted</h1>
+
+<p>
+  <p>
+    <strong>Link:</strong>
+    <%= @news_source.link %>
+  </p>
+
+  <p>
+    <strong>Title:</strong>
+    <%= @news_source.title %>
+  </p>
+
+  <%= link_to 'Go to suggestion', news_source_url (@news_source) %> |
+</p>

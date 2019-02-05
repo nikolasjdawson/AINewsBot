@@ -5,6 +5,7 @@ ruby '2.5.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 # gem 'mailkick'
+gem 'invisible_captcha'
 gem 'rails', '~> 5.2.1'
 gem 'metainspector'
 gem 'sucker_punch', '~> 2.0'

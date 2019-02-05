@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Likes:</strong>
+  <%= @news_source.likes %>
+</p>
+
+<p>
+  <strong>Link:</strong>
+  <%= @news_source.link %>
+</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @news_source.title %>
+</p>
+
+<%= link_to 'Edit', edit_news_source_path(@news_source) %> |
+<%= link_to 'Back', news_sources_path %>

@@ -3,6 +3,7 @@ Thanks, you're subscribed.
 <% end %>
 <p id="notice"><%= notice %></p>
 <h1>AI NewsBot</h1>
+<p><a href="#suggest">Suggest a news source</a> </p>
 <div class="row">
   <div class="col-md-9">
   <% @categories.each do |cat| %>
@@ -25,6 +26,34 @@ Thanks, you're subscribed.
       </div>
     </div>
   <% end %>
+  <div class="card mt-3" id="suggest">
+    <div class="card-body">
+      <h2>Suggest a news source</h2>
+      <%= render "news_sources/form" %>
+    </div>
+  </div>
+  <div class="alert alert-success mt-3" role="alert" id="news" style="display:none;">
+    <p>Thanks for submitting a news source!</p>
+  </div>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h2>Suggested news sources</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>News source</th>
+            <th>Likes</th>
+          </tr>
+        </thead>
+
+        <tbody id="news_sources">
+          <% @news_sources.each do |news_source| %>
+            <%= render partial: 'news_sources/news_source', locals: {news_source: news_source} %>
+          <% end %>
+        </tbody>
+      </table>
+      </div>
+    </div>
   </div>
   <div class="col-md-3 ml-auto">
     <div class="card">
