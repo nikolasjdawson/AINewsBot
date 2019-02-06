@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
-  resources :news_sources
+  resources :news_sources do
+    member do
+      get :like
+    end
+  end
   resources :subscribers do
     member do
       get :confirm, :unsubscribe, :resubscribe

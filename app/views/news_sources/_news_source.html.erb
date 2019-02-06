@@ -1,4 +1,7 @@
 <tr>
               <td><%= link_to news_source.title, news_source.link, target: "_blank" %></td>
-              <td><%= news_source.likes %></td>
+              <td><span id="likes-<%= news_source.id %>" class="badge badge-primary"><%= news_source.likes %>
+              </span>
+                <a href="/news_sources/<%= news_source.id %>/like" data-remote="true"> <i class="fas fa-thumbs-up"></i></a>
+              </td>
             </tr>

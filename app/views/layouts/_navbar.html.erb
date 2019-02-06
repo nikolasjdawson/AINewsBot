@@ -16,8 +16,8 @@
 </style>
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FAFAFA;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="/">
-      <img src="<%= asset_path 'logo.png' %>" height="40px" alt="">
+    <a class="navbar-brand" href="https://bitsandatoms.co">
+      <img src="<%= asset_path 'logo.png' %>" height="50px" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
           <a class="nav-link" href="http://bitsandatoms.co/blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://ainewsbot.bitsandatoms.co/">AI Newsbot</a>
+          <a class="nav-link" href="http://ainews.bitsandatoms.co/">AI NewsBot</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://bitsandatoms.co/about">About</a>
@@ -43,6 +43,9 @@
         <% if user_signed_in? %>
         <li class="nav-item">
           <a class="nav-link" href="<%= feed_sources_path %>">Feed Sources</a>
+        </li>
+        <li class="nav-item">
+          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "nav-link" %>
         </li>
         <% end %>
 

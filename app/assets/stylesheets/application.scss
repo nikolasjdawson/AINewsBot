@@ -1,1 +1,11 @@
 @import 'bootstrap';
+@import 'font-awesome-sprockets';
+@import 'font-awesome';
+#footerwrap {
+    clear: both;
+    border-top: 1px solid rgba(0,0,0,.1);
+    text-align: center;
+    padding: 54px 0 2em;
+    background-color: #fafafa;
+    color: #000;
+}

@@ -1,10 +1,14 @@
 class NewsSourcesController < ApplicationController
-  skip_before_action :authenticate_user!, only: :create
-  before_action :set_news_source, only: [:show, :edit, :update, :destroy]
+  skip_before_action :authenticate_user!, only: [:create]
+  before_action :set_news_source, only: [:show, :edit, :update, :destroy, :like]
   invisible_captcha only: [:create, :update], honeypot: :subtitle
 
   # GET /news_sources
   # GET /news_sources.json
+  def like
+    @news_source.update(likes: @news_source.likes + 1)
+  end
+
   def index
     @news_sources = NewsSource.all
   end
@@ -30,6 +34,7 @@ class NewsSourcesController < ApplicationController
 
     respond_to do |format|
       if @news_source.save
+        @news_source.update(likes: 1)
         NewsAlertJob.new.perform(@news_source.id)
         format.js
         # format.html { redirect_to @news_source, notice: 'News source was successfully created.' }
