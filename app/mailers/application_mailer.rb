@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'nik@bitsandatoms.co'
+  default from: 'AI NewsBot <nik@bitsandatoms.co>'
   layout 'mailer'
 end

@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
+body {
+  font-family: 'Open Sans', sans-serif;
+}
 #footerwrap {
     clear: both;
     border-top: 1px solid rgba(0,0,0,.1);

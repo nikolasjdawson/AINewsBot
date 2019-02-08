@@ -7,6 +7,7 @@ class NewsSourcesController < ApplicationController
   # GET /news_sources.json
   def like
     @news_source.update(likes: @news_source.likes + 1)
+    Like.create(news_source_id: @news_source.id, liker: @liker)
   end
 
   def index

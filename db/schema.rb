@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_05_034617) do
+ActiveRecord::Schema.define(version: 2019_02_08_041038) do
 
   create_table "categories", force: :cascade do |t|
     t.string "title"
@@ -48,6 +48,15 @@ ActiveRecord::Schema.define(version: 2019_02_05_034617) do
     t.datetime "updated_at", null: false
     t.string "host"
     t.index ["feed_source_id"], name: "index_items_on_feed_source_id"
+  end
+
+  create_table "likes", force: :cascade do |t|
+    t.integer "news_source_id"
+    t.string "liker"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["liker"], name: "index_likes_on_liker", unique: true
+    t.index ["news_source_id"], name: "index_likes_on_news_source_id"
   end
 
   create_table "mailkick_opt_outs", force: :cascade do |t|
