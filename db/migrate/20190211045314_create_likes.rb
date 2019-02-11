@@ -1,4 +1,5 @@
 class CreateLikes < ActiveRecord::Migration[5.2]
+  # drop_table :likes
   def change
     create_table :likes do |t|
       t.belongs_to :news_source, foreign_key: true
@@ -6,6 +7,6 @@ class CreateLikes < ActiveRecord::Migration[5.2]
 
       t.timestamps
     end
-    add_index :likes, :liker, unique: true
+    add_index :likes, [:news_source_id, :liker], unique: true
   end
 end
