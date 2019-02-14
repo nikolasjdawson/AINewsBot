@@ -1,5 +1,5 @@
 class CreateLikes < ActiveRecord::Migration[5.2]
-  # drop_table :likes
+  drop_table :likes
   def change
     create_table :likes do |t|
       t.belongs_to :news_source, foreign_key: true
