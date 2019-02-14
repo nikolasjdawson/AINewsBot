@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>AI NewsBot - Bits & Atoms</title>
+    <title><%= @site.name if @site %></title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
@@ -9,7 +9,7 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="<%= @site.favicon_link %>" rel="shortcut icon" />
+    <link href="<%= @site.favicon_link if @site %>" rel="shortcut icon" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105080900-2"></script>
@@ -24,10 +24,10 @@
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
+    <%= render 'layouts/navbar' if @site %>
     <div class="container">
       <%= yield %>
     </div>
-      <%= render 'layouts/footer' %>
+      <%= render 'layouts/footer' if @site %>
   </body>
 </html>
