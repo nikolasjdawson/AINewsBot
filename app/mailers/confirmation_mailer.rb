@@ -8,6 +8,6 @@ class ConfirmationMailer < ApplicationMailer
   def confirm(subscriber_id)
     @subscriber = Subscriber.find(subscriber_id)
 
-    mail to: @subscriber.email, subject: "Please confirmation your subscription to AI NewsBot"
+    mail to: @subscriber.email, subject: "Please confirmation your subscription to " + @site.name
   end
 end

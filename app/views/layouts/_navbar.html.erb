@@ -17,7 +17,7 @@
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FAFAFA;">
   <div class="container-fluid">
     <a class="navbar-brand" href="https://bitsandatoms.co">
-      <img src="<%= asset_path 'logo.png' %>" height="50px" alt="">
+      <img src="<%= @site.logo %>" height="50px" alt="">
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
           <a class="nav-link" href="http://bitsandatoms.co/blog">Blog</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="http://ainews.bitsandatoms.co/">AI NewsBot</a>
+          <a class="nav-link" href="http://" + <%= @site.host %>><%= @site.name %></a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://bitsandatoms.co/about">About</a>

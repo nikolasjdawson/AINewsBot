@@ -1,0 +1,20 @@
+
+<%= simple_form_for(@site) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :name %>
+    <%= f.input :host %>
+    <%= f.input :admin_email %>
+    <%= f.input :logo %>
+    <%= f.input :favicon_link %>
+    <%= f.input :mailgun_key %>
+    <%= f.input :mailgun_domain %>
+    <%= f.input :intro %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

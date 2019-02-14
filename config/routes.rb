@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :sites
   resources :news_sources do
     member do
       get :like

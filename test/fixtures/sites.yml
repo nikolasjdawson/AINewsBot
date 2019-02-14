@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  host: MyString
+  admin_email: MyString
+  logo: MyString
+  favicon_link: MyString
+  mailgun_key: MyString
+  mailgun_domain: MyString
+  intro: MyText
+
+two:
+  name: MyString
+  host: MyString
+  admin_email: MyString
+  logo: MyString
+  favicon_link: MyString
+  mailgun_key: MyString
+  mailgun_domain: MyString
+  intro: MyText

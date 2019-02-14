@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @site.name %>
+</p>
+
+<p>
+  <strong>Host:</strong>
+  <%= @site.host %>
+</p>
+
+<p>
+  <strong>Admin email:</strong>
+  <%= @site.admin_email %>
+</p>
+
+<p>
+  <strong>Logo:</strong>
+  <%= @site.logo %>
+</p>
+
+<p>
+  <strong>Favicon link:</strong>
+  <%= @site.favicon_link %>
+</p>
+
+<p>
+  <strong>Mailgun key:</strong>
+  <%= @site.mailgun_key %>
+</p>
+
+<p>
+  <strong>Mailgun domain:</strong>
+  <%= @site.mailgun_domain %>
+</p>
+
+<p>
+  <strong>Intro:</strong>
+  <%= @site.intro %>
+</p>
+
+<%= link_to 'Edit', edit_site_path(@site) %> |
+<%= link_to 'Back', sites_path %>

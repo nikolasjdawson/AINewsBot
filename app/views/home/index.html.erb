@@ -1,20 +1,18 @@
+<% if Site.all.any? %>
+
 <% if params[:confirmed] %>
 Thanks, you're subscribed.
 <% end %>
 <p id="notice"><%= notice %></p>
-<h1>AI NewsBot</h1>
+<h1><%= @site.name %></h1>
 <p>
   <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    About the AI NewsBot
+    About the <%= @site.name %>
   </a>
 </p>
 <div class="collapse" id="collapseExample">
   <div class="card card-body">
-    <p style="text-align:justify">The AI NewsBot is a curated Artificial Intelligence news aggregator. The AI NewsBot automatically fetches AI News & Research from high-quality and interesting sources. It then updates the News Feed every day and sends a FREE email to subscribers at 7am AEST on the days they have chosen.<br />
-    <br />
-    My friend, <a href="https://www.peterargent.com/" target="_blank">Pete</a>, and I wanted to build a system that automatically sends an email summary of the AI news sources that we routinely check. After using it ourselves, we found it very useful for staying informed and saving time. So, we’ve decided to share the AI NewsBot by enabling you to subscribe for FREE and receive emails on the days you want.<br />
-    <br />
-    If there are AI news sources that you would like to see included, please <a href="#suggest">suggest a news source</a> by filling out the form at the bottom of the page. Alternatively, if the news source has already been suggested, click the ‘Like’ button for that source. </p>
+    <%= @site.intro.html_safe %>
   </div>
 </div>
 
@@ -79,17 +77,15 @@ Thanks, you're subscribed.
   <div class="col-md-3 ml-auto">
     <div class="card mt-3">
       <div class="card-body">
-        <h4>Subcribe to the AI NewsBot</h4>
+        <h4>Subcribe to <%= @site.name %></h4>
         <%= render "subscribers/form" %>
       </div>
     </div>
     <div class="alert alert-success mt-3" role="alert" id="thanks" style="display:none;">
-      <p>Thanks! Your AI news is on its way!</p>
+      <p>Thanks! Your <%= @site.name %> is on its way!</p>
     </div>
   </div>
 </div>
-
-
-<!-- Sample tweet card -->
-<!-- <blockquote class="twitter-tweet"><p lang="en" dir="ltr">What are the basic concepts of a <a href="https://twitter.com/hashtag/MachineLearning?src=hash&amp;ref_src=twsrc%5Etfw">#MachineLearning</a>?<a href="https://twitter.com/hashtag/DataScience?src=hash&amp;ref_src=twsrc%5Etfw">#DataScience</a> <a href="https://twitter.com/hashtag/bigdata?src=hash&amp;ref_src=twsrc%5Etfw">#bigdata</a> <a href="https://twitter.com/Fisher85M?ref_src=twsrc%5Etfw">@fisher85m</a> <a href="https://twitter.com/hashtag/DataAnalytics?src=hash&amp;ref_src=twsrc%5Etfw">#DataAnalytics</a> <a href="https://twitter.com/hashtag/ArtificialIntelligence?src=hash&amp;ref_src=twsrc%5Etfw">#ArtificialIntelligence</a> <a href="https://twitter.com/hashtag/AI?src=hash&amp;ref_src=twsrc%5Etfw">#AI</a> <a href="https://twitter.com/hashtag/ML?src=hash&amp;ref_src=twsrc%5Etfw">#ML</a> <a href="https://twitter.com/hashtag/DL?src=hash&amp;ref_src=twsrc%5Etfw">#DL</a> mt: <a href="https://twitter.com/Fisher85M?ref_src=twsrc%5Etfw">@Fisher85m</a> <a href="https://t.co/uom3i4ltKE">pic.twitter.com/uom3i4ltKE</a></p>&mdash; Casey Welch (@CaseyAWelch) <a href="https://twitter.com/CaseyAWelch/status/1084640571707322369?ref_src=twsrc%5Etfw">January 14, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
+<% else %>
+<%= render "sites/form" %>
+<% end %>
