@@ -1,4 +1,6 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: @site.name + '<'+ @site.admin_email + '>'
+  if @site
+    default from: @site.name + '<'+ @site.admin_email + '>'
+  end
   layout 'mailer'
 end
