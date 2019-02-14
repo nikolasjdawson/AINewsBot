@@ -12,7 +12,14 @@ class Item < ApplicationRecord
     link = self.link
     uri = URI.parse('https://publish.twitter.com/oembed?url=' + link)
     response = Net::HTTP.get_response(uri)
-    json = JSON.parse response.body
-    card = json['html']
+    if response.code == "200"
+      json = JSON.parse response.body
+      card = json['html']
+    else
+      self.destroy
+      return ""
+    end
   end
 end
+
+# https://twitter.com/Mc_Snz/status/1095763932688596994
