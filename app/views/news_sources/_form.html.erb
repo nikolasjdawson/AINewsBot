@@ -7,9 +7,6 @@
     <%= f.input :title, label: "News source title" %>
     <%= f.invisible_captcha :subtitle %>
     <%= f.input :link, label: "News source URL" %>
-    <% if user_signed_in? %>
-    <%= f.input :is_accepted, label: "This news has been added to the feed" %>
-    <% end %>
   </div>
 
   <div class="form-actions">

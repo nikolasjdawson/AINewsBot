@@ -1,6 +1,18 @@
-<h1>Editing News Source</h1>
 
-<%= render 'form', news_source: @news_source %>
+<%= simple_form_for(@news_source, remote: true) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
 
-<%= link_to 'Show', @news_source %> |
-<%= link_to 'Back', news_sources_path %>
+  <div class="form-inputs">
+    <%= f.input :title, label: "News source title" %>
+    <%= f.invisible_captcha :subtitle %>
+    <%= f.input :link, label: "News source URL" %>
+    <% if user_signed_in? %>
+    <%= f.input :is_accepted, label: "This news has been added to the feed" %>
+    <% end %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit "Submit", class: "btn btn-primary" %>
+  </div>
+<% end %>
