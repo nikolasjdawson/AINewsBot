@@ -5,16 +5,14 @@
 
   <div class="form-inputs">
     <%= f.input :name %>
-    <%= f.input :host %>
+    <%= f.input :host, label: 'The domain for this site' %>
     <%= f.input :admin_email %>
-    <%= f.input :logo %>
+    <%= f.input :logo, label: 'Link to logo image' %>
     <%= f.input :favicon_link %>
-    <%= f.input :mailgun_key %>
-    <%= f.input :mailgun_domain %>
-    <%= f.input :intro %>
+    <%= f.input :intro, label: 'An introduction about your NewsBot (HTML accepted)', input_html: {rows: 5} %>
   </div>
 
   <div class="form-actions">
-    <%= f.button :submit %>
+    <%= f.button :submit, class: 'btn btn-danger' %>
   </div>
 <% end %>

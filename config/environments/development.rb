@@ -61,7 +61,7 @@ Rails.application.configure do
   config.action_mailer.default_url_options = { host: 'localhost:3000' }
   config.action_mailer.delivery_method = :mailgun
   config.action_mailer.mailgun_settings = {
-    api_key: 'key-9f02aa362fdf1017dc9846e065465b44',
-    domain: 'sandboxebfc946214054cf08641fbf32f02be34.mailgun.org',
+    # api_key: Rails.application.credentials.mailgun[:key],
+    # domain: Rails.application.credentials.mailgun[:domain],
   }
 end

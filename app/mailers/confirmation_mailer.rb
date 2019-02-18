@@ -7,7 +7,7 @@ class ConfirmationMailer < ApplicationMailer
   #
   def confirm(subscriber_id)
     @subscriber = Subscriber.find(subscriber_id)
-
+    @site = Site.last
     mail to: @subscriber.email, subject: "Please confirmation your subscription to " + @site.name
   end
 end

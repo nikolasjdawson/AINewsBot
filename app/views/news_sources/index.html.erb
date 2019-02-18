@@ -2,25 +2,26 @@
 
 <h1>News Sources</h1>
 
-<table>
+<table class='table'>
   <thead>
     <tr>
       <th>Likes</th>
       <th>Link</th>
       <th>Title</th>
-      <th colspan="3"></th>
+      <th>Accepted</th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @news_sources.each do |news_source| %>
       <tr>
-        <td><%= news_source.likes %></td>
+        <td><%= news_source.likes.count %></td>
         <td><%= news_source.link %></td>
         <td><%= news_source.title %></td>
-        <td><%= link_to 'Show', news_source %></td>
-        <td><%= link_to 'Edit', edit_news_source_path(news_source) %></td>
-        <td><%= link_to 'Destroy', news_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= news_source.is_accepted %></td>
+        <td><%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_news_source_path(news_source) %></td>
+        <td><%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, news_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New News Source', new_news_source_path %>
+<%= link_to 'New News Source', new_news_source_path, class: 'btn btn-danger'%>

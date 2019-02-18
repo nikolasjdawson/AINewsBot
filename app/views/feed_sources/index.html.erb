@@ -9,22 +9,19 @@
       <th>Link</th>
       <th>Feed type</th>
       <th>Num articles</th>
-      <th>Description</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @feed_sources.each do |feed_source| %>
       <tr>
-        <td><%= feed_source.title %></td>
+        <td><%= link_to feed_source.title, feed_source %></td>
         <td><%= feed_source.link %></td>
         <td><%= feed_source.feed_type %></td>
         <td><%= feed_source.num_articles %></td>
-        <td><%= feed_source.description %></td>
-        <td><%= link_to 'Show', feed_source %></td>
-        <td><%= link_to 'Edit', edit_feed_source_path(feed_source) %></td>
-        <td><%= link_to 'Destroy', feed_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_feed_source_path(feed_source) %></td>
+        <td><%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, feed_source, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +29,4 @@
 
 <br>
 
-<%= link_to 'New Feed Source', new_feed_source_path %>
+<%= link_to 'New Feed Source', new_feed_source_path, class: 'btn btn-danger' %>

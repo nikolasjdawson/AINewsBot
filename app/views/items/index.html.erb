@@ -5,11 +5,10 @@
 <table class='table'>
   <thead>
     <tr>
-      <th>Title</th>
+      <th width='50%'>Title</th>
       <th>Pub date</th>
-      <th>Category</th>
       <th>Feed source</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
@@ -18,11 +17,9 @@
       <tr>
         <td><%= link_to item.title, item.link, target: "_blank" %></td>
         <td><%= item.pub_date.strftime('%d %b %y') if item.pub_date %></td>
-        <td><%= item.category %></td>
         <td><%= item.feed_source.title %></td>
-        <td><%= link_to 'Show', item %></td>
-        <td><%= link_to 'Edit', edit_item_path(item) %></td>
-        <td><%= link_to 'Destroy', item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to '<i class="fas fa-edit"></i>'.html_safe, edit_item_path(item) %></td>
+        <td><%= link_to '<i class="fas fa-trash-alt"></i>'.html_safe, item, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +27,4 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>
+<%= link_to 'New Item', new_item_path, class: 'btn btn-danger' %>

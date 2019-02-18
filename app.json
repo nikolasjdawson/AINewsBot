@@ -1,0 +1,35 @@
+{
+  "name": "NewsBot",
+  "description": "Automated news fetching and delivery service.",
+  "repository": "https://github.com/nikolasjdawson/AINewsBot",
+  "success_url": "/welcome",
+  "scripts": {
+    "postdeploy": "bundle exec rake db:create db:migrate db:seed"
+  },
+  "env": {
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying the integrity of signed cookies.",
+      "generator": "secret"
+    },
+    "WEB_CONCURRENCY": {
+      "description": "The number of processes to run.",
+      "value": "5"
+    },
+    "MAILGUN_KEY": {
+      "value": "enter_your_key_here"
+    },
+    "MAILGUN_DOMAIN": {
+      "value": "enter_your_domain_here"
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 2,
+      "size": "Performance-M"
+    }
+  },
+  "image": "heroku/ruby",
+  "addons": [
+    "scheduler", "heroku-postgresql"
+  ],
+}

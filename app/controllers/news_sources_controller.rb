@@ -36,7 +36,7 @@ class NewsSourcesController < ApplicationController
 
     respond_to do |format|
       if @news_source.save
-        @news_source.update(likes: 1)
+        # @news_source.update(likes: 1)
         NewsAlertJob.new.perform(@news_source.id)
         format.js
         # format.html { redirect_to @news_source, notice: 'News source was successfully created.' }
@@ -53,7 +53,7 @@ class NewsSourcesController < ApplicationController
   def update
     respond_to do |format|
       if @news_source.update(news_source_params)
-        format.html { redirect_to @news_source, notice: 'News source was successfully updated.' }
+        format.html { redirect_to news_sources_path, notice: 'News source was successfully updated.' }
         format.json { render :show, status: :ok, location: @news_source }
       else
         format.html { render :edit }
@@ -80,6 +80,6 @@ class NewsSourcesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def news_source_params
-      params.require(:news_source).permit(:likes, :link, :title)
+      params.require(:news_source).permit(:is_accepted, :link, :title)
     end
 end

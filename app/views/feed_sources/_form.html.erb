@@ -14,11 +14,9 @@
 <%= form.association :category %>
 <%= form.input :title %>
 <%= form.input :link %>
-<%= form.input :num_articles %>
-<%= form.input :feed_type %>
-<%= form.input :description %>
+<%= form.input :num_articles, label: 'The number of articles fetched per day for this news source.' %>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit class: 'btn btn-danger' %>
   </div>
 <% end %>
