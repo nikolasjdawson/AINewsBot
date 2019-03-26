@@ -1,64 +1,50 @@
 <style media="screen">
-  .navbar {
-    padding: 0 1rem;
-    border-bottom: 1px solid rgba(0,0,0,.1);
-    min-height: 55px;
-  }
-  .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
-    color: #ed1e24;
-}
-.navbar-light .navbar-nav .nav-link {
-    color: rgb(0, 0, 0);
-}
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #ed1e24;
-}
+
 </style>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FAFAFA;">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="https://bitsandatoms.co">
-      <img src="<%= @site.logo %>" height="50px" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+<div class="theme-main-menu theme-menu-one">
+ <div class="logo"><a href="<%= root_url %>"><%= image_tag @site.logo %></a></div>
+ <nav id="mega-menu-holder" class="navbar navbar-expand-lg">
+   <div  class="container position-relative nav-container">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="flaticon-setup"></i>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="http://bitsandatoms.co">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://bitsandatoms.co/blog">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href='<%= "http://" + @site.host %>'><%= @site.name %></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://bitsandatoms.co/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://bitsandatoms.co/contact">Contact</a>
-        </li>
-        <% if user_signed_in? %>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Admin
-        </a>
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="<%= categories_path %>">Categories</a>
-          <a class="dropdown-item" href="<%= feed_sources_path %>">Feed Sources</a>
-          <a class="dropdown-item" href="<%= items_path %>">Items</a>
-          <a class="dropdown-item" href="<%= edit_site_path(@site) %>">Site Info</a>
-          <a class="dropdown-item" href="<%= subscribers_path %>">Subscribers</a>
-          <a class="dropdown-item" href="<%= news_sources_path %>">Suggested News Sources</a>
-          <div class="dropdown-divider"></div>
-          <%= link_to "Sign out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-        </div>
-      </li>
-        <% end %>
+            <li class="nav-item position-relative <%= 'active' if current_page?(root_path) %>">
+              <a href="<%= root_url %>" class="nav-link"><i class="fas fa-home"></i>.</a>
+            </li>
+            <li class="nav-item position-relative <%= 'active' if current_page?(about_path) %>">
+              <a href="<%= about_path %>" class="nav-link text-dark">About.</a>
+            </li>
+            <li class="nav-item position-relative <%= 'active' if current_page?(contact_path) %>">
+              <a href="<%= contact_path %>" class="nav-link text-dark">Contact.</a>
+            </li>
+            <!-- <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">Community.</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">About.</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">Contact.</a>
+            </li> -->
+            <li class="nav-item dropdown position-relative">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown">More...</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="<%= about_path %>" class="dropdown-item">Community</a></li>
+                    <li><a href="<%= about_path %>" class="dropdown-item">Coaching</a></li>
+                    <li><a href="<%= about_path %>" class="dropdown-item">About</a></li>
+                    <li><a href="<%= contact_path %>" class="dropdown-item">Contact</a></li>
+                    <li><a href="<%= new_user_session_path %>" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Register / Sign in</a></li>
+                  <!-- <li><a href="blog-masonry.html" class="dropdown-item">blog masonry</a></li>
+                  <li><a href="blog-details.html" class="dropdown-item">blog details</a></li>
+                  <li><a href="blog-details-full-grid.html" class="dropdown-item">blog details full grid</a></li> -->
+                  </ul> <!-- /.dropdown-menu -->
+              </li>
 
-      </ul>
-    </div>
-  </div>
-</nav>
+         </ul>
+       </div>
+    </div> <!-- /.container -->
+  </nav> <!-- /#mega-menu-holder -->
+</div> <!-- /.theme-main-menu -->

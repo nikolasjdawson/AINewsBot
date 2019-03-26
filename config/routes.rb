@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :posts
+  get 'pages/about'
+  get 'pages/contact'
+  get 'pages/ainews'
   resources :sites
   resources :news_sources do
     member do
@@ -13,6 +17,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :categories
   root 'home#index'
+  get 'about', to: 'pages#about'
+  get 'contact', to: 'pages#contact'
+  get 'ainews', to: 'pages#ainews'
   resources :items
   resources :feed_sources do
     member do

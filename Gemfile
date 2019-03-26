@@ -16,6 +16,10 @@ gem 'devise'
 gem 'simple_form'
 gem 'mailgun-ruby', '~>1.1.6'
 gem 'valid_email'
+gem 'friendly_id'
+gem 'carrierwave'
+gem 'cloudinary'
+gem 'activestorage-cloudinary-service'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production

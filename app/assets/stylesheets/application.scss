@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import 'bootstrap';
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
-body {
-  font-family: 'Open Sans', sans-serif;
-}
-#footerwrap {
-    clear: both;
-    border-top: 1px solid rgba(0,0,0,.1);
-    text-align: center;
-    padding: 54px 0 2em;
-    background-color: #fafafa;
-    color: #000;
-}
+// @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Lato:100,300,900,700|Playfair+Display:700');
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700');
+@import 'circular-std';
+@import 'owl.carousel';
+@import 'owl.theme';
+@import 'animate';
+@import 'aos';
+@import 'menu';
+@import 'flaticon';
+@import 'custom-animation';
+@import 'theme-style';
+@import 'responsive';
+@import 'theme-color';
+@import 'floating-action-button';
+@import 'customisations';

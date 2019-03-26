@@ -1,0 +1,91 @@
+<% if Site.all.any? %>
+
+<% if params[:confirmed] %>
+Thanks, you're subscribed.
+<% end %>
+<p id="notice"><%= notice %></p>
+<h1><%= @site.name %></h1>
+<p>
+  <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+    About the <%= @site.name %>
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-body">
+    <%= @site.intro.html_safe %>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-9">
+  <% @categories.each do |cat| %>
+  <% if cat.title == 'Twitter' %>
+    <h4 class='mt-3'>Twitter Feed</h4>
+    <% cat.latest_items.each do |item| %>
+    <%= item.twitter_card.html_safe %>
+  <% end %>
+  <% else %>
+    <div class="card mt-3">
+      <div class="card-body">
+        <h4><%= cat.title %></h4>
+        <table class="table">
+          <tbody>
+            <% cat.latest_items.each do |item| %>
+              <tr>
+                <td>
+                  <p class = 'mb-0 pb-0'><%= link_to item.title, item.link, target: '_blank' %>
+                  <small class='text-muted'>(<%= link_to item.host, item.host, class: 'text-muted' %>)</small></p>
+                  <small><%= truncate(item.description, length: 100) %></small>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <% end %>
+  <% end %>
+  <div class="card mt-3" id="suggest">
+    <div class="card-body">
+      <h2>Suggest a news source</h2>
+      <%= render "news_sources/form" %>
+    </div>
+  </div>
+  <div class="alert alert-success mt-3" role="alert" id="news" style="display:none;">
+    <p>Thanks for submitting a news source!</p>
+  </div>
+  <div class="card mt-3">
+    <div class="card-body">
+      <h2>Suggested news sources</h2>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>News source</th>
+            <th>Likes</th>
+          </tr>
+        </thead>
+
+        <tbody id="news_sources">
+          <% @news_sources.each do |news_source| %>
+            <%= render partial: 'news_sources/news_source', locals: {news_source: news_source} %>
+          <% end %>
+        </tbody>
+      </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 ml-auto">
+    <div class="card mt-3">
+      <div class="card-body">
+        <h4>Subcribe to <%= @site.name %></h4>
+        <%= render "subscribers/form" %>
+      </div>
+    </div>
+    <div class="alert alert-success mt-3" role="alert" id="thanks" style="display:none;">
+      <p>Thanks! Your <%= @site.name %> is on its way!</p>
+    </div>
+  </div>
+</div>
+<% else %>
+<%= render "sites/form" %>
+<% end %>

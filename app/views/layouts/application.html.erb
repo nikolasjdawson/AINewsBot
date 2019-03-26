@@ -1,33 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title><%= @site.name if @site %></title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="UTF-8">
+		<meta name="keywords" content="Business design institute, workshops, design thinking, customer experience design, service design">
+		<meta name="author" content="Pete Argent">
+		<meta name="description" content="Business Design Institute helps small business succeed through design and technology education.">
+    <%# canonical_tag -%>
+		<meta name='og:image' content='images/home/ogg.png'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="theme-color" content="#233D63">
+		<meta name="msapplication-navbutton-color" content="#233D63">
+		<meta name="apple-mobile-web-app-status-bar-style" content="#233D63">
+		<title><%= content_for?(:title) ? content_for(:title) : "Small Business Success Tools & Workshops @ Business Design Institute" %></title>
+
+    <%= render 'layouts/meta' %>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00835e">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="theme-color" content="#00835e">
+
+
+
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <link href="<%= @site.favicon_link if @site %>" rel="shortcut icon" />
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105080900-2"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.18.10/slimselect.min.css" rel="stylesheet"></link>
 
-      gtag('config', 'UA-105080900-2');
+    <%= javascript_include_tag 'head', 'data-turbolinks-track': 'reload' %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.18.10/slimselect.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function($) {
+        let slim = new SlimSelect({
+          select: '.slim-select',
+          showSearch: false,
+        });
+    });
     </script>
+    <!-- Fix Internet Explorer ______________________________________-->
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="<%= asset_path 'html5shiv.js' %>"></script>
+      <script src="<%= asset_path 'respond.js' %>"></script>
+    <![endif]-->
+    <% if Rails.env.production? %>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-89985658-2"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
+        gtag('config', 'UA-89985658-2');
+      </script>
+
+    <% end %>
+
+    </style>
   </head>
 
   <body>
-    <%= render 'layouts/navbar' if @site %>
-    <div class="container">
+    <div class="main-page-wrapper">
+      <%= render 'layouts/navbar' %>
       <%= yield %>
+      <%= render 'layouts/footer' %>
+      <div class="menu pmd-floating-action"  role="navigation">
+        <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-success" data-title="Share">
+          <span class="pmd-floating-hidden">Share</span>
+          <i class="fas fa-share"></i>
+        </a>
+        <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-warning" data-title="Help" data-toggle="modal" data-target="#enquiry-modal">
+          <span class="pmd-floating-hidden">Help</span>
+          <i class="fas fa-question"></i>
+        </a>
+        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary"  data-title="Actions" href="javascript:void(0);">
+          <span class="pmd-floating-hidden">Primary</span>
+          <i class="fas fa-plus pmd-sm"></i>
+        </a>
+      </div>
+      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+      <script type="text/javascript">
+        $(window).on('scroll', function (){
+          var sticky = $('.theme-main-menu');
+          scroll = $(window).scrollTop();
+          if (scroll >= 100) sticky.addClass('fixed');
+          else sticky.removeClass('fixed');
+        });
+        if ($("[data-aos]").length) {
+            AOS.init({
+            duration: 1000,
+            mirror: true
+          });
+        };
+
+        $(document).ready(function($) {
+          $(document).on('turbolinks:load', function() {
+            // var cl = cloudinary.Cloudinary.new({cloud_name: "business-design-school"});
+            // cl.responsive();
+
+            // $('[data-toggle="tooltip"]').tooltip();
+
+
+            $('#q-minus').click(function() {
+              if($('#line_item_quantity').val() > 1) {
+                $('#line_item_quantity').val(parseInt($('#line_item_quantity').val()) - 1);
+                $('#quantity-value').html($('#line_item_quantity').val());
+                var totalPrice = $('#single-price').text();
+                var newTotalPrice = $('#line_item_quantity').val() * Number(totalPrice.replace(/[^0-9.-]+/g,""));
+                $('#total-price').html('$' + newTotalPrice + '.00');
+              }
+            });
+            $('#q-plus').click(function() {
+              // if($('#line_item_quantity').val() < 15) {
+                $('#line_item_quantity').val(parseInt($('#line_item_quantity').val()) + 1);
+                $('#quantity-value').html($('#line_item_quantity').val());
+                var totalPrice = $('#single-price').text();
+                var newTotalPrice = $('#line_item_quantity').val() * Number(totalPrice.replace(/[^0-9.-]+/g,""));
+                $('#total-price').html('$' + newTotalPrice + '.00');
+              // }
+            });
+
+
+
+
+            $("[id^=select-session-]").on('change', function() {
+              var courseId = $("[id^=select-session]").attr('id').substring(15);
+              $("#enrol-button").attr("href", "/carts/new?course=" + courseId + '&intake=' + this.value);
+            });
+
+            $("#enrol-modal-session-select").on('change', function() {
+              var optionSelected = $(this).find("option:selected");
+              var valueSelected  = optionSelected.val();
+              if(valueSelected >= 1) {
+                $('#confirm-button').css('display', 'inline-block');
+                $('#add-ticket-button-1').show();
+                $('.intake-id-field').val(valueSelected);
+              }
+              else {
+                $('#confirm-button').hide();
+                $('#add-ticket-button-1').hide();
+                $('.intake-id-field').val("");
+              }
+            });
+          });
+        });
+
+      </script>
     </div>
-      <%= render 'layouts/footer' if @site %>
   </body>
 </html>

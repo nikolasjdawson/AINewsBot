@@ -1,0 +1,110 @@
+<style media="screen">
+
+</style>
+<div class="theme-main-menu theme-menu-one">
+ <div class="logo"><a href="<%= root_url %>"><%= image_tag 'Logo2.svg' %></a></div>
+ <nav id="mega-menu-holder" class="navbar navbar-expand-lg">
+   <div  class="container position-relative nav-container">
+     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <i class="flaticon-setup"></i>
+       </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+         <ul class="navbar-nav">
+
+            <li class="nav-item position-relative <%= 'active' if current_page?(root_path) %>">
+              <a href="<%= root_url %>" class="nav-link"><i class="fas fa-home"></i>.</a>
+            </li>
+            <li class="nav-item position-relative <%= 'active' if current_page?(workshops_path) %>">
+              <a href="<%= workshops_path %>" class="nav-link text-dark">Workshops.</a>
+            </li>
+            <li class="nav-item position-relative <%= 'active' if current_page?(resources_path) %>">
+              <a href="<%= root_path %>" class="nav-link text-dark">Resources.</a>
+            </li>
+            <!-- <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">Community.</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">About.</a>
+            </li>
+            <li class="nav-item position-relative">
+              <a href="index.html" class="nav-link">Contact.</a>
+            </li> -->
+            <li class="nav-item dropdown position-relative">
+                  <a class="nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown">More...</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="<%= about_path %>" class="dropdown-item">Community</a></li>
+                    <li><a href="<%= about_path %>" class="dropdown-item">Coaching</a></li>
+                    <li><a href="<%= about_path %>" class="dropdown-item">About</a></li>
+                    <li><a href="<%= contact_path %>" class="dropdown-item">Contact</a></li>
+                    <li><a href="<%= new_user_session_path %>" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Register / Sign in</a></li>
+                  <!-- <li><a href="blog-masonry.html" class="dropdown-item">blog masonry</a></li>
+                  <li><a href="blog-details.html" class="dropdown-item">blog details</a></li>
+                  <li><a href="blog-details-full-grid.html" class="dropdown-item">blog details full grid</a></li> -->
+                  </ul> <!-- /.dropdown-menu -->
+              </li>
+
+         </ul>
+       </div>
+    </div> <!-- /.container -->
+  </nav> <!-- /#mega-menu-holder -->
+  <div class="header-right-widget">
+    <ul>
+      <% if @persisting_cart %>
+        <li class="action-list-item cart-action-wrapper mr-5">
+    				<div class="dropdown">
+    					<button class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+    					    <img src="<%= asset_path 'icon/icon37.svg' %>" alt="">
+    					    <span class="item-count"><%= @persisting_cart.tickets.count %></span>
+    					</button>
+    					<div class="dropdown-menu dropdown-menu-right" x-placement="bottom-end" style="position: absolute; transform: translate3d(16px, 27px, 0px); top: 0px; left: 0px; will-change: transform;">
+    						<ul class="cart-product-list">
+                  <% @persisting_cart.tickets.each do |ticket| %>
+                    <% course = ticket.intake.course %>
+                    <li class="clearfix selected-item">
+      								<a href="#" class="item-img"><img src="<%= asset_path course.image %>" alt=""></a>
+      								<div class="item-info">
+      									<a href="#" class="name"><%= course.name %>.</a>
+      									<div class="price"><%= number_to_currency course.price %> <span class="quantity">x 1</span></div>
+      									<a href="#" class="close"><i class="fa fa-window-close" aria-hidden="true"></i></a>
+      								</div>
+      							</li>
+                  <% end %>
+    						</ul>
+    						<div class="subtotal d-flex justify-content-between align-items-center">
+    							<div class="title">Subtotal</div>
+    							<div class="total-price">$163.00</div>
+    						</div>
+    						<ul class="button-group">
+    							<li><a href="cart.html" class="view-cart">View Cart</a></li>
+    							<li><a href="checkout.html" class="checkout">Checkout</a></li>
+    						</ul>
+    					</div>
+    				</div>
+    			</li>
+
+        <% end %>
+        <!-- <li class="action-list-item cart-action-wrapper">
+          <a href="#" class="nav-link text-secondary" data-toggle="modal" data-target="#enquiry-modal"><img src="<%= asset_path 'icon/question.svg' %>" alt="" width="24px"></a>
+        </li> -->
+      <!-- <li class="call-us pr-5"><a href="#">Contact Us <i class="icon flaticon-next"></i></a></li> -->
+      <!-- <li class="language-switcher">
+        <div class="dropdown">
+          <button type="button" class="dropdown-toggle" data-toggle="dropdown">
+              En
+          </button>
+          <div class="dropdown-menu dropdown-menu-right">
+            <ul class="ct-language__dropdown">
+              <li><a href="#googtrans(en|en)" class="lang-en lang-select" data-lang="en">USA</a></li>
+              <li><a href="#googtrans(en|es)" class="lang-es lang-select" data-lang="es">MEXICO</a></li>
+              <li><a href="#googtrans(en|fr)" class="lang-es lang-select" data-lang="fr">FRANCE</a></li>
+              <li><a href="#googtrans(en|zh-CN)" class="lang-es lang-select" data-lang="zh-CN">CHINA</a></li>
+              <li><a href="#googtrans(en|de)" class="lang-es lang-select" data-lang="de">German</a></li>
+              <li><a href="#googtrans(en|hi)" class="lang-es lang-select" data-lang="hi">Hindi</a></li>
+            </ul>
+            </div>
+        </div>
+      </li> -->
+
+    </ul>
+  </div> <!-- /.header-right-widget -->
+</div> <!-- /.theme-main-menu -->

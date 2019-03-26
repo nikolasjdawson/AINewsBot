@@ -1,91 +1,156 @@
-<% if Site.all.any? %>
-
-<% if params[:confirmed] %>
-Thanks, you're subscribed.
-<% end %>
-<p id="notice"><%= notice %></p>
-<h1><%= @site.name %></h1>
-<p>
-  <a class="" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    About the <%= @site.name %>
-  </a>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    <%= @site.intro.html_safe %>
+<div class="our-project project-with-sidebar pt-150 pb-100">
+  <div class="full-width-container">
+    <div class="row">
+      <div class="col-lg-9 order-lg-last">
+        <h1 class="page-title">Business Design Workshops </h1>
+        <div class="row horizontal-workshops">
+          <div class="card mb-5">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="http://res.cloudinary.com/business-design-institute/image/upload/v1553164409/spwlrevqrisnj2l6mjqe.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h2 class="card-title mt-4 mt-sm-0">
+                      <a class="text-primary" href="/courses/free-prepare-your-small-business-for-the-future-workshop">Future Proof Your Business</a>
+                    </h2>
+                    <h5 class="mb-3">          Small Business Digital Transformation        </h5>
+                    <div class="slogan mt-2" data-wow-delay="0.2s">
+                      <span>Beginner Friendly</span>
+                    </div>
+                    <div class="slogan mt-2" data-wow-delay="0.2s">
+                      <span>Workshop </span>
+                    </div>
+                    <div class="slogan mt-2" data-wow-delay="0.2s">
+                      <span>1.5 Hours</span>
+                    </div>
+                    <span class="slogan mt-2" data-wow-delay="0.2s">
+                      <span>
+                        <a href="/workshops?category=Innovation">Innovation</a>
+                      </span>
+                    </span>
+                    <span class="slogan mt-2" data-wow-delay="0.2s">
+                      <span>
+                        <a href="/workshops?category=Technology">Technology</a>
+                      </span>
+                    </span>
+                    <div class="card-text mt-4 mb-3">
+                      <p>This FREE workshop introduces you to tools and ideas used by tech startups to successfully compete with and disrupt enterprise.</p>
+                    </div>
+                    <a href="/courses/free-prepare-your-small-business-for-the-future-workshop" class="cart-button mt-4">More details <i class="fas fa-angle-right ml-2">
+                    </i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div class="theme-pagination-one pt-15">
+        <ul>
+          <li class="active">
+            <a href="#">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="flaticon-next-1">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-8 order-lg-first">
+      <div class="gallery-sidebar">
+        <div class="sidebar-list mb-80">
+          <h3 class="sidebar-title">Topics</h3>
+          <ul>
+            <li class="active">
+              <a href="/workshops">All</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Business+Design">Business Design</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Customer+Focus">Customer Focus</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Innovation">Innovation</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Service+Design">Service Design</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Social+Impact">Social Impact</a>
+            </li>
+            <li class="">
+              <a href="/workshops?category=Technology">Technology</a>
+            </li>
+          </ul>
+        </div>
+        <!-- <div class="sidebar-list mb-80">
+        <h3 class="sidebar-title">Challenge Level</h3>
+        <ul>
+          <li class="active">
+            <a href="/workshops">All</a>
+          </li>
+          <li>
+            <a href="/workshops?level=Beginner-Friendly">Beginner Friendly</a>
+          </li>
+          <li>
+            <a href="/workshops?level=Intermediate">Intermediate</a>
+          </li>
+          <li>
+            <a href="/workshops?level=Advanced">Advanced</a>
+          </li>
+        </ul>
+      </div> -->
+      <div class="sidebar-icon">
+        <h3 class="sidebar-title">Share it. </h3>
+        <ul>
+          <li>
+            <a href="#">
+              <i class="fab fa-facebook" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-twitter" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fab fa-linkedin" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="far fa-envelope" aria-hidden="true">
+              </i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
 </div>
-
-<div class="row">
-  <div class="col-md-9">
-  <% @categories.each do |cat| %>
-  <% if cat.title == 'Twitter' %>
-    <h4 class='mt-3'>Twitter Feed</h4>
-    <% cat.latest_items.each do |item| %>
-    <%= item.twitter_card.html_safe %>
-  <% end %>
-  <% else %>
-    <div class="card mt-3">
-      <div class="card-body">
-        <h4><%= cat.title %></h4>
-        <table class="table">
-          <tbody>
-            <% cat.latest_items.each do |item| %>
-              <tr>
-                <td>
-                  <p class = 'mb-0 pb-0'><%= link_to item.title, item.link, target: '_blank' %>
-                  <small class='text-muted'>(<%= link_to item.host, item.host, class: 'text-muted' %>)</small></p>
-                  <small><%= truncate(item.description, length: 100) %></small>
-                </td>
-              </tr>
-            <% end %>
-          </tbody>
-        </table>
-      </div>
-    </div>
-    <% end %>
-  <% end %>
-  <div class="card mt-3" id="suggest">
-    <div class="card-body">
-      <h2>Suggest a news source</h2>
-      <%= render "news_sources/form" %>
-    </div>
-  </div>
-  <div class="alert alert-success mt-3" role="alert" id="news" style="display:none;">
-    <p>Thanks for submitting a news source!</p>
-  </div>
-  <div class="card mt-3">
-    <div class="card-body">
-      <h2>Suggested news sources</h2>
-      <table class="table">
-        <thead>
-          <tr>
-            <th>News source</th>
-            <th>Likes</th>
-          </tr>
-        </thead>
-
-        <tbody id="news_sources">
-          <% @news_sources.each do |news_source| %>
-            <%= render partial: 'news_sources/news_source', locals: {news_source: news_source} %>
-          <% end %>
-        </tbody>
-      </table>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 ml-auto">
-    <div class="card mt-3">
-      <div class="card-body">
-        <h4>Subcribe to <%= @site.name %></h4>
-        <%= render "subscribers/form" %>
-      </div>
-    </div>
-    <div class="alert alert-success mt-3" role="alert" id="thanks" style="display:none;">
-      <p>Thanks! Your <%= @site.name %> is on its way!</p>
-    </div>
-  </div>
+<div class="solid-inner-banner">
+  <ul class="page-breadcrumbs">
+    <li>
+      <a href="/">Home</a>
+    </li>
+    <li>
+      <i class="fa fa-angle-right" aria-hidden="true">
+      </i>
+    </li>
+    <li>Workshops</li>
+  </ul>
 </div>
-<% else %>
-<%= render "sites/form" %>
-<% end %>
