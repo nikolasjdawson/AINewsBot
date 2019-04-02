@@ -1,50 +1,37 @@
-<style media="screen">
+<div class="container">
+  <div class="row">
+    <div class="col mt-5 mb-5 text-center">
+      <%= image_tag 'logo.png' %>
+    </div>
+  </div>
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
-</style>
-<div class="theme-main-menu theme-menu-one">
- <div class="logo"><a href="<%= root_url %>"><%= image_tag @site.logo %></a></div>
- <nav id="mega-menu-holder" class="navbar navbar-expand-lg">
-   <div  class="container position-relative nav-container">
-     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-           <i class="flaticon-setup"></i>
-       </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-         <ul class="navbar-nav">
-
-            <li class="nav-item position-relative <%= 'active' if current_page?(root_path) %>">
-              <a href="<%= root_url %>" class="nav-link"><i class="fas fa-home"></i>.</a>
-            </li>
-            <li class="nav-item position-relative <%= 'active' if current_page?(about_path) %>">
-              <a href="<%= about_path %>" class="nav-link text-dark">About.</a>
-            </li>
-            <li class="nav-item position-relative <%= 'active' if current_page?(contact_path) %>">
-              <a href="<%= contact_path %>" class="nav-link text-dark">Contact.</a>
-            </li>
-            <!-- <li class="nav-item position-relative">
-              <a href="index.html" class="nav-link">Community.</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a href="index.html" class="nav-link">About.</a>
-            </li>
-            <li class="nav-item position-relative">
-              <a href="index.html" class="nav-link">Contact.</a>
-            </li> -->
-            <li class="nav-item dropdown position-relative">
-                  <a class="nav-link dropdown-toggle text-dark" href="#" data-toggle="dropdown">More...</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="<%= about_path %>" class="dropdown-item">Community</a></li>
-                    <li><a href="<%= about_path %>" class="dropdown-item">Coaching</a></li>
-                    <li><a href="<%= about_path %>" class="dropdown-item">About</a></li>
-                    <li><a href="<%= contact_path %>" class="dropdown-item">Contact</a></li>
-                    <li><a href="<%= new_user_session_path %>" class="dropdown-item"><i class="fas fa-sign-in-alt"></i> Register / Sign in</a></li>
-                  <!-- <li><a href="blog-masonry.html" class="dropdown-item">blog masonry</a></li>
-                  <li><a href="blog-details.html" class="dropdown-item">blog details</a></li>
-                  <li><a href="blog-details-full-grid.html" class="dropdown-item">blog details full grid</a></li> -->
-                  </ul> <!-- /.dropdown-menu -->
-              </li>
-
-         </ul>
-       </div>
-    </div> <!-- /.container -->
-  </nav> <!-- /#mega-menu-holder -->
-</div> <!-- /.theme-main-menu -->
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+</div>

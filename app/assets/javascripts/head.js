@@ -15,12 +15,3 @@
 //= require jquery2
 //= require popper
 //= require bootstrap
-//= require aos
-//= require wow.min
-//= require owl.carousel.min
-//= require jquery.fancybox.min
-//= require jquery.ajaxchimp.min
-//= require cloudinary-core-shrinkwrap.min
-//= require lang
-//= require theme
-//= require turbolinks

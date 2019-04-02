@@ -2,31 +2,24 @@
 
 <h1>Posts</h1>
 
-<table>
+<table class='table'>
   <thead>
     <tr>
       <th>Title</th>
-      <th>Intro</th>
-      <th>Body</th>
       <th>Image</th>
       <th>Pub date</th>
-      <th>Slug</th>
       <th>Is published</th>
-      <th colspan="3"></th>
+      <th colspan="2"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @posts.each do |post| %>
       <tr>
-        <td><%= post.title %></td>
-        <td><%= post.intro %></td>
-        <td><%= post.body %></td>
-        <td><%= post.image %></td>
-        <td><%= post.pub_date %></td>
-        <td><%= post.slug %></td>
-        <td><%= post.is_published %></td>
-        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to post.title, post %></td>
+        <td><%= image_tag post.image_url, width: '50px' %></td>
+        <td><%= post.pub_date.strftime('%d %b %y') %></td>
+        <td><%= 'Published' if post.is_published %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>

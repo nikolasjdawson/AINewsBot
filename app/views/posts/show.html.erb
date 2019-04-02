@@ -1,39 +1,77 @@
-<p id="notice"><%= notice %></p>
+<% content_for :title, @post.title %>
+<style media="screen">
+  .post-title {
+    padding: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: end;
+    height: 100%;
+    border-width: 1px;
+    border-color: #ecf0f1 #ecf0f1 #ecf0f1 #fff;
+}
+.c-widget {
+    padding: 32px;
+    border-left: 1px solid #ecf0f1;
+    border-right: 1px solid #ecf0f1;
+    border-bottom: 1px solid #ecf0f1;
+    counter-reset: widget;
+}
+.c-widget__title {
+    padding-left: 8px;
+    margin-bottom: 28px;
+    line-height: 1;
+    letter-spacing: 2px;
+    border-left: 2px solid #b70038;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+.c-dropcap {
+    margin-right: 8px;
+    color: #b70038;
+}
+</style>
 
-<p>
-  <strong>Title:</strong>
-  <%= @post.title %>
-</p>
+<div class="row">
+  <div class="col-md-8 p-0">
+    <img src="<%= @post.image_url %>" class="img-fluid mb-5" alt="<%= @post.title %>">
 
-<p>
-  <strong>Intro:</strong>
-  <%= @post.intro %>
-</p>
-
-<p>
-  <strong>Body:</strong>
-  <%= @post.body %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= image_tag @post.image_url %>
-</p>
-
-<p>
-  <strong>Pub date:</strong>
-  <%= @post.pub_date %>
-</p>
-
-<p>
-  <strong>Slug:</strong>
-  <%= @post.slug %>
-</p>
-
-<p>
-  <strong>Is published:</strong>
-  <%= @post.is_published %>
-</p>
-
-<%= link_to 'Edit', edit_post_path(@post) %> |
-<%= link_to 'Back', posts_path %>
+  </div>
+  <div class="col-md-4 align-text-bottom" style="background-color: #f4f6f8;">
+    <div class="post-title">
+      <h1 class="">
+        <%= @post.title %>
+      </h1>
+      <p class="text-muted"><%= @post.pub_date.strftime('%d %B %Y') %></p>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-8">
+<div class="text-center">
+  <% @post.tags.each do |tag| %>
+  <span class="slogan mt-2" data-wow-delay="0.2s">
+    <span>
+      <a href="/workshops?category=Technology"><%= tag %></a>
+    </span>
+  </span>
+  <% end %>
+</div>
+<hr>
+<%= @post.body.html_safe %>
+  </div>
+  <div class="col-md-4">
+    <div class="c-widget">
+      <h4>Nik Dawson</h4>
+    </div>
+    <div class="c-widget__title">
+      <h3>Recent Articles</h3>
+    </div>
+  </div>
+</div>
