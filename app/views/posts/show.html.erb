@@ -36,6 +36,19 @@
     margin-right: 8px;
     color: #b70038;
 }
+.c-tags a {
+    display: inline-block;
+    padding: 8px 20px;
+    margin: 0 8px 8px 0;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Rubik,Helvetica,Arial,sans-serif;
+    line-height: 25px;
+    color: #5d738d;
+    background-color: #f4f6f8;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
 </style>
 
 <div class="row">
@@ -54,15 +67,6 @@
 </div>
 <div class="row">
   <div class="col-md-8">
-<div class="text-center">
-  <% @post.tags.each do |tag| %>
-  <span class="slogan mt-2" data-wow-delay="0.2s">
-    <span>
-      <a href="/workshops?category=Technology"><%= tag %></a>
-    </span>
-  </span>
-  <% end %>
-</div>
 <hr>
 <%= @post.body.html_safe %>
   </div>
@@ -72,6 +76,25 @@
     </div>
     <div class="c-widget__title">
       <h3>Recent Articles</h3>
+    </div>
+    <% @recent_articles.each do |post| %>
+    <div class="row align-items-center">
+      <div class="col-6">
+        <h6><%= link_to post.title, post, class: 'text-dark' %></h6>
+      </div>
+      <div class="col-6">
+        <img src="<%= post.image_url %>" class="mr-3" alt="<%= post.title %>" width="100%">
+      </div>
+    </div>
+    <hr>
+    <% end %>
+    <div class="c-widget__title">
+      <h3>Tags</h3>
+    </div>
+    <div class="c-tags">
+      <% @tags.each do |tag| %>
+        <%= link_to tag, root_path(tag: tag.name) %>
+      <% end %>
     </div>
   </div>
 </div>

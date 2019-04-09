@@ -1,8 +1,5 @@
 Rails.application.routes.draw do
   resources :posts
-  get 'pages/about'
-  get 'pages/contact'
-  get 'pages/ainews'
   resources :sites
   resources :news_sources do
     member do

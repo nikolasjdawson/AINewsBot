@@ -11,6 +11,9 @@ class PostsController < ApplicationController
   # GET /posts/1
   # GET /posts/1.json
   def show
+    @recent_articles = Post.order(pub_date: :desc).first(5)
+    @tags = Post.tag_counts_on(:tags)
+    render layout: "application"
   end
 
   # GET /posts/new

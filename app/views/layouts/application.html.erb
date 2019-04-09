@@ -33,15 +33,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.18.10/slimselect.min.css" rel="stylesheet"></link>
 
     <%= javascript_include_tag 'head', 'data-turbolinks-track': 'reload' %>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slim-select/1.18.10/slimselect.min.js"></script>
-    <script type="text/javascript">
-    $(document).ready(function($) {
-        let slim = new SlimSelect({
-          select: '.slim-select',
-          showSearch: false,
-        });
-    });
-    </script>
     <!-- Fix Internet Explorer ______________________________________-->
     <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -61,96 +52,14 @@
 
     <% end %>
 
-    </style>
   </head>
 
   <body>
-    <div class="main-page-wrapper">
+    <div class="container">
       <%= render 'layouts/navbar' %>
       <%= yield %>
       <%= render 'layouts/footer' %>
-      <div class="menu pmd-floating-action"  role="navigation">
-        <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-success" data-title="Share">
-          <span class="pmd-floating-hidden">Share</span>
-          <i class="fas fa-share"></i>
-        </a>
-        <a href="javascript:void(0);" class="pmd-floating-action-btn btn btn-sm pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-warning" data-title="Help" data-toggle="modal" data-target="#enquiry-modal">
-          <span class="pmd-floating-hidden">Help</span>
-          <i class="fas fa-question"></i>
-        </a>
-        <a class="pmd-floating-action-btn btn pmd-btn-fab pmd-btn-raised pmd-ripple-effect btn-primary"  data-title="Actions" href="javascript:void(0);">
-          <span class="pmd-floating-hidden">Primary</span>
-          <i class="fas fa-plus pmd-sm"></i>
-        </a>
-      </div>
-      <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-      <script type="text/javascript">
-        $(window).on('scroll', function (){
-          var sticky = $('.theme-main-menu');
-          scroll = $(window).scrollTop();
-          if (scroll >= 100) sticky.addClass('fixed');
-          else sticky.removeClass('fixed');
-        });
-        if ($("[data-aos]").length) {
-            AOS.init({
-            duration: 1000,
-            mirror: true
-          });
-        };
 
-        $(document).ready(function($) {
-          $(document).on('turbolinks:load', function() {
-            // var cl = cloudinary.Cloudinary.new({cloud_name: "business-design-school"});
-            // cl.responsive();
-
-            // $('[data-toggle="tooltip"]').tooltip();
-
-
-            $('#q-minus').click(function() {
-              if($('#line_item_quantity').val() > 1) {
-                $('#line_item_quantity').val(parseInt($('#line_item_quantity').val()) - 1);
-                $('#quantity-value').html($('#line_item_quantity').val());
-                var totalPrice = $('#single-price').text();
-                var newTotalPrice = $('#line_item_quantity').val() * Number(totalPrice.replace(/[^0-9.-]+/g,""));
-                $('#total-price').html('$' + newTotalPrice + '.00');
-              }
-            });
-            $('#q-plus').click(function() {
-              // if($('#line_item_quantity').val() < 15) {
-                $('#line_item_quantity').val(parseInt($('#line_item_quantity').val()) + 1);
-                $('#quantity-value').html($('#line_item_quantity').val());
-                var totalPrice = $('#single-price').text();
-                var newTotalPrice = $('#line_item_quantity').val() * Number(totalPrice.replace(/[^0-9.-]+/g,""));
-                $('#total-price').html('$' + newTotalPrice + '.00');
-              // }
-            });
-
-
-
-
-            $("[id^=select-session-]").on('change', function() {
-              var courseId = $("[id^=select-session]").attr('id').substring(15);
-              $("#enrol-button").attr("href", "/carts/new?course=" + courseId + '&intake=' + this.value);
-            });
-
-            $("#enrol-modal-session-select").on('change', function() {
-              var optionSelected = $(this).find("option:selected");
-              var valueSelected  = optionSelected.val();
-              if(valueSelected >= 1) {
-                $('#confirm-button').css('display', 'inline-block');
-                $('#add-ticket-button-1').show();
-                $('.intake-id-field').val(valueSelected);
-              }
-              else {
-                $('#confirm-button').hide();
-                $('#add-ticket-button-1').hide();
-                $('.intake-id-field').val("");
-              }
-            });
-          });
-        });
-
-      </script>
     </div>
   </body>
 </html>

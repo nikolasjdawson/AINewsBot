@@ -10,10 +10,33 @@
   .card-body {
     padding: 10px 0;
   }
+  .c-archive {
+    padding: 32px;
+    margin-bottom: 32px;
+    background-color: #f4f6f8;
+    border: 1px solid #ecf0f1;
+  }
+  .c-archive__title {
+      margin-bottom: 0;
+      font-size: 36px;
+  }
+  .c-post-card__title {
+    clear: both;
+    margin-bottom: 14px;
+    font-size: 22px;
+    font-weight: 500;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
 </style>
 
 
 <div class="container">
+  <% if params[:tag] %>
+    <div class="c-archive">
+      <h2 class="c-archive__title"><%= params[:tag] %></h2>
+    </div>
+  <% end %>
   <div class="row">
     <% @posts.each do |post| %>
       <div class="col-md-4">
@@ -23,9 +46,9 @@
             <h6 class = 'text-uppercase text-muted'>
               Artificial Intelligence
             </h6>
-            <h2 class="card-title mt-4 mt-sm-0">
-              <a class="text-primary" href="<%= post_path(post) %>"><%= post.title %></a>
-            </h2>
+            <h3 class="c-post-card__title mt-4 mt-sm-0">
+              <a class="text-dark" href="<%= post_path(post) %>"><%= post.title %></a>
+            </h3>
             <p class="text-muted">
               <%= post.pub_date.strftime('%d %B %Y') %>
             </p>

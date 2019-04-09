@@ -1,7 +1,11 @@
 class HomeController < ApplicationController
   skip_before_action :authenticate_user!
   def index
-    @posts = Post.all
+    if params[:tag]
+      @posts = Post.order(pub_date: :desc).tagged_with(params[:tag])
+    else
+      @posts = Post.order(pub_date: :desc)
+    end
     if Site.all.any?
       @site = Site.last
       @news_source = NewsSource.new
