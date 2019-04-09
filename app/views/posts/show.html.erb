@@ -51,12 +51,15 @@
 }
 </style>
 
-<div class="row">
-  <div class="col-md-8 p-0">
-    <img src="<%= @post.image_url %>" class="img-fluid mb-5" alt="<%= @post.title %>">
+<div class="row bg-light p-0 align-items-end">
 
+  <!-- POST IMAGE -->
+  <div class="col-md-8 p-0">
+    <img src="<%= @post.image_url %>" class="img-fluid" alt="<%= @post.title %>">
   </div>
-  <div class="col-md-4 align-text-bottom" style="background-color: #f4f6f8;">
+
+  <!-- POST TITLE -->
+  <div class="col-md-4 p-0">
     <div class="post-title">
       <h1 class="">
         <%= @post.title %>
@@ -65,36 +68,46 @@
     </div>
   </div>
 </div>
+
 <div class="row">
-  <div class="col-md-8">
-<hr>
-<%= @post.body.html_safe %>
+
+  <!-- POST CONTENT -->
+  <div class="col-md-8 pl-0 pr-5 pt-5">
+    <%= @post.body.html_safe %>
   </div>
-  <div class="col-md-4">
-    <div class="c-widget">
+
+  <!-- SIDEBAR CONTENT -->
+  <div class="col-md-4 p-0">
+    <div class="c-widget text-center">
       <h4>Nik Dawson</h4>
     </div>
-    <div class="c-widget__title">
-      <h3>Recent Articles</h3>
-    </div>
-    <% @recent_articles.each do |post| %>
-    <div class="row align-items-center">
-      <div class="col-6">
-        <h6><%= link_to post.title, post, class: 'text-dark' %></h6>
+    <div class="c-widget">
+      <div class="c-widget__title">
+        <h3>Recent Articles</h3>
       </div>
-      <div class="col-6">
-        <img src="<%= post.image_url %>" class="mr-3" alt="<%= post.title %>" width="100%">
+      <% @recent_articles.each do |post| %>
+      <div class="row align-items-center p-1">
+        <div class="col-6">
+          <h6><%= link_to post.title, post, class: 'text-dark' %></h6>
+        </div>
+        <div class="col-6">
+          <img src="<%= post.image_url %>" class="mr-3" alt="<%= post.title %>" width="100%">
+        </div>
       </div>
-    </div>
-    <hr>
-    <% end %>
-    <div class="c-widget__title">
-      <h3>Tags</h3>
-    </div>
-    <div class="c-tags">
-      <% @tags.each do |tag| %>
-        <%= link_to tag, root_path(tag: tag.name) %>
+      <hr>
       <% end %>
     </div>
+    <div class="c-widget">
+      <div class="c-widget__title">
+        <h3>Tags</h3>
+      </div>
+      <div class="c-tags">
+        <% @tags.each do |tag| %>
+          <%= link_to tag, root_path(tag: tag.name) %>
+        <% end %>
+      </div>
+    </div>
+
+
   </div>
 </div>
