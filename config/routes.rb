@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :post_categories
   resources :posts
   resources :sites
   resources :news_sources do
@@ -17,6 +18,7 @@ Rails.application.routes.draw do
   get 'about', to: 'pages#about'
   get 'contact', to: 'pages#contact'
   get 'ainews', to: 'pages#ainews'
+  get 'subscribe', to: 'pages#subscribe'
   resources :items
   resources :feed_sources do
     member do

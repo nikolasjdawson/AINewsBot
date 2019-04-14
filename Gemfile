@@ -21,6 +21,8 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem 'activestorage-cloudinary-service'
 gem 'acts-as-taggable-on', '~> 6.0'
+# gem "actiontext", github: "rails/rails/tree/master/actiontext", require: "action_text"
+# gem "image_processing", "~> 1.2"
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: :development
 gem 'pg', group: :production

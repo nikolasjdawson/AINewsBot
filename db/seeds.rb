@@ -25,12 +25,21 @@
 #   end
 # end
 Post.destroy_all
-doc = Nokogiri::XML(open('posts.xml'))
-num_items = doc.css('item').count
+require 'open-uri'
+url = 'https://bitsandatoms.co/blog/page/'
 i = 0
-while i < num_items
-  item = doc.css('item')[i]
-  # puts item.css('content:encoded').text
-  post = Post.create(title: item.css('title').text, pub_date: item.css('pubDate').text, body: item.xpath('content:encoded').text, is_published: true, slug: item.css('link').text.split('https://bitsandatoms.co/')[1].chomp('/'))
+while i < 4
+  doc = Nokogiri::HTML(open(url + (i + 1).to_s))
+  num_posts = doc.css('.post-title a').count
+  p = 0
+  while p < num_posts
+    post_url = doc.css('.post-title a')[p]['href']
+    post = Nokogiri::HTML(open(post_url))
+    post_content = post.css('.entry-content').text
+    pub_date = post.css('.year').text
+    title = post.css('.entry-title').text
+    post = Post.create(title: title, pub_date: pub_date, body: post_content, is_published: true, slug: post_url.split('https://bitsandatoms.co/')[1].chomp('/'))
+    p += 1
+  end
   i += 1
 end

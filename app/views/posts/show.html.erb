@@ -1,5 +1,8 @@
 <% content_for :title, @post.title %>
 <style media="screen">
+  .text-justify {
+    text-align: justify;
+  }
   .post-title {
     padding: 32px;
     display: -webkit-box;
@@ -72,7 +75,7 @@
 <div class="row">
 
   <!-- POST CONTENT -->
-  <div class="col-md-8 pl-0 pr-5 pt-5">
+  <div class="col-md-8 pl-0 pr-5 pt-5 trix-content text-justify">
     <%= @post.body.html_safe %>
   </div>
 

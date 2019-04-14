@@ -17,4 +17,7 @@ class PagesController < ApplicationController
       @site = Site.new
     end
   end
+  def subscribe
+    @subscriber = Subscriber.new
+  end
 end

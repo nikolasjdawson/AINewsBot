@@ -1,0 +1,24 @@
+<h1>Subscribe</h1>
+<p>Research in artificial intelligence moves fast. Keep up with the latest developments in the field by subscribing to our newsletter.</p>
+<hr>
+<div class="row">
+  <div class="col-md-6">
+    <%= simple_form_for(@subscriber, remote: true) do |f| %>
+      <%= f.error_notification %>
+      <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <div class="row">
+      <div class="col-md-6">
+        <%= f.input :first_name %>
+      </div>
+      <div class="col-md-6">
+        <%= f.input :last_name %>
+      </div>
+    </div>
+        <%= f.input :email %>
+        <%= f.association :day_of_weeks, as: :check_boxes, label: 'Choose the days you would like to receive ' + @site.name, input_html: {checked: true} %>
+      <div class="form-actions">
+        <%= f.submit "Subscribe", class: "btn btn-danger" %>
+      </div>
+    <% end %>
+  </div>
+</div>

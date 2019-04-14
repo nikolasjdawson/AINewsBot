@@ -6,8 +6,12 @@
   <div class="form-inputs">
     <%= f.input :title %>
     <%= f.input :intro %>
+    <%= f.association :post_category %>
+    <%= link_to "Add Category", new_post_category_path %>
     <%= f.input :tag_list %>
-    <%= f.input :body %>
+    <input name="post[body]" id="post_body" type="hidden">
+    <trix-editor class="trix-content" input="post_body"></trix-editor>
+    <!-- <trix-editor input="post_body" class="trix-content" autofocus="" contenteditable="" role="textbox" trix-id="1" toolbar="trix-toolbar-1" spellcheck="false"></trix-editor> -->
     <%= f.input :image %>
     <%= f.input :pub_date %>
     <%= f.input :is_published %>
